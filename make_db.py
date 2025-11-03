@@ -5,8 +5,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 
 # --- Konfigurasi ---
-NAMA_FILE_TXT = "thesis.txt"
-NAMA_FOLDER_DB = "db_ta"  # Nama folder untuk menyimpan database vektor
+NAMA_FILE_TXT = "thesis.txt" # Ubah jadi nama file anda
+NAMA_FOLDER_DB = "db_thesis"  # Nama folder untuk menyimpan database vektor
 MODEL_EMBEDDING = "all-MiniLM-L6-v2" # Model embedding gratis & populer
 # --------------------
 
@@ -67,3 +67,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
