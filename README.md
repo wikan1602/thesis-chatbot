@@ -1,27 +1,21 @@
-# 🎓 Chatbot Tugas Akhir (Streamlit + Groq + RAG)
+# Chatbot Tugas Akhir (Streamlit + Groq + RAG)
 
 Repositori ini berisi kode sumber untuk aplikasi web "Chatbot Tugas Akhir", sebuah portofolio yang mendemonstrasikan implementasi RAG (Retrieval-Augmented Generation) pada naskah penelitian akademis.
 
-## 🚀 DEMO LIVE
+## DEMO LIVE
 
 **Coba aplikasinya langsung di sini:**
 [**https://huggingface.co/spaces/wikan1602/thesis-chatbot**](https://huggingface.co/spaces/wikan1602/thesis-chatbot)
 
 ---
 
-### [Video atau GIF demo aplikasi Anda di sini]
-
-*(Sangat disarankan untuk merekam GIF singkat Anda menggunakan aplikasi ini dan menaruhnya di sini)*
-
----
-
-## 🎯 Tentang Proyek Ini
+## Tentang Proyek Ini
 
 Aplikasi ini memungkinkan pengguna untuk "bertanya" langsung ke naskah Tugas Akhir saya yang berjudul: *"Asosiasi Diabetes Melitus Tipe 2 dengan Brachial-Ankle Pulse Wave Velocity dan Komplians Pembuluh Darah"*.
 
 Alih-alih membaca seluruh naskah, pengguna dapat mengajukan pertanyaan dalam bahasa Indonesia (misalnya: "Apa kesimpulan penelitian ini?") dan mendapatkan jawaban yang relevan, lengkap dengan sumbernya.
 
-## 🛠️ Tumpukan Teknologi (Tech Stack)
+## Tumpukan Teknologi (Tech Stack)
 
 * **Framework Aplikasi:** Streamlit
 * **Orkestrasi LLM:** LangChain
@@ -30,7 +24,7 @@ Alih-alih membaca seluruh naskah, pengguna dapat mengajukan pertanyaan dalam bah
 * **Model Embeddings:** `sentence-transformers/all-MiniLM-L6-v2`
 * **Hosting:** Hugging Face Spaces (via Docker)
 
-## 🔧 Menjalankan Secara Lokal
+## Menjalankan Secara Lokal
 
 1.  *Clone* repositori ini:
     ```bash
