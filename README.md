@@ -44,11 +44,17 @@ The bot is built on the text from the thesis: *"Asosiasi Diabetes Melitus Tipe 2
     pip install -r requirements.txt
     ```
 
-4.  **Build the vector database:**
-    The original `ta_teks.txt` is included. Run the `make_db.py` script to create the local `db_ta/` vector store.
-    ```bash
-    python make_db.py
-    ```
+4.  **Prepare Data and Build Database:**
+    The source thesis text (`thesis.txt`) is **intentionally not included** in this public repository to protect academic intellectual property and future publication rights.
+
+    To run this project, you must:
+    1.  Provide your own `.txt` file (e.g., `my_data.txt`) as a data source.
+    2.  Edit the `make_db.py` script to point to your file (change the `NAMA_FILE_TXT` variable).
+    3.  Run the script to build the vector database:
+        ```bash
+        python make_db.py
+        ```
+    This will create the local `db_ta/` folder required by `app.py`.
 
 5.  **Set up environment variables:**
     Create a file named `.env` and add your Groq API key:
