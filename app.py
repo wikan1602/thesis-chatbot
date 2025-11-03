@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 # --- Konfigurasi Model & Database ---
-NAMA_FOLDER_DB = "db_ta"
+NAMA_FOLDER_DB = "db_thesis"
 MODEL_EMBEDDING = "all-MiniLM-L6-v2"
 MODEL_LLM = "groq/compound" # Menggunakan model Llama 3 yang sudah diperbarui
 
@@ -151,4 +151,5 @@ if prompt := st.chat_input("Apa yang ingin Anda tanyakan?"):
             st.caption(f"Waktu respons: {waktu_respons:.2f} detik")
     
     # Tambahkan respons bot ke riwayat
+
     st.session_state.messages.append({"role": "assistant", "content": jawaban_bot})
