@@ -1,0 +1,848 @@
+ABSTRAK
+
+Asosiasi Diabetes Melitus Tipe 2 dengan Brachial-Ankle Pulse Wave Velocity dan Komplians Pembuluh Darah
+
+Oleh
+Wikan Priambudi
+NIM: 18321011
+(Program Studi Sarjana Teknik Biomedis)
+
+
+
+Diabetes Melitus Tipe 2 (DMT2) merupakan masalah kesehatan global dengan prevalensi yang terus meningkat, termasuk di Indonesia yang menempati peringkat kelima dunia. Penyakit ini secara signifikan meningkatkan risiko komplikasi kardiovaskular, yang menjadi penyebab utama mortalitas pada penderitanya. Salah satu manifestasi vaskular progresif dari DMT2 adalah peningkatan kekakuan arteri (arterial stiffness), yang secara noninvasif dapat diukur menggunakan brachial-ankle pulse wave velocity (baPWV). Peningkatan kekakuan arteri ini secara teoretis berhubungan erat dengan penurunan komplians (compliance) atau kelenturan pembuluh darah. Meskipun banyak penelitian telah membandingkan kekakuan arteri antara kelompok DMT2 dan individu sehat, belum banyak yang mengkaji komplians pembuluh darah secara bersamaan, terutama yang diestimasi dari analisis bentuk gelombang nadi berbasis model hemodinamik yang validitasnya masih diperdebatkan.
+
+Penelitian ini bertujuan untuk menginvestigasi secara komprehensif perbedaan parameter vaskular mencakup baPWV, komplians aorta, dan komplians perifer antara kelompok pasien DMT2 dan kelompok kontrol sehat. Selain itu, penelitian ini juga melakukan analisis sekunder pada subkelompok pasien DMT2 untuk mengeksplorasi hubungan antara tingkat keparahan komplikasi, yang diukur dengan adapted Diabetes Complication Severity Index (aDCSI), dengan parameter-parameter vaskular tersebut.
+
+Penelitian ini menggunakan desain studi cross-sectional yang melibatkan total 93 partisipan, terdiri dari 45 pasien DMT2 dan 48 individu sebagai kontrol sehat. Data dikumpulkan dari dataset sekunder dan rekrutmen langsung di fasilitas kesehatan, dengan pengambilan sampel secara consecutive sampling. Parameter vaskular, termasuk baPWV, komplians aorta, dan komplians perifer, diukur menggunakan alat noninvasif NIVA. Analisis statistik dilakukan secara bertahap, dimulai dari statistik deskriptif, uji beda antar kelompok (uji-t independen atau Mann-Whitney U), hingga analisis regresi multivariat. Untuk mengatasi potensi hubungan non-linear, berbagai model regresi dieksplorasi, termasuk OLS, polinomial, dan spline. Pemilihan model final didasarkan pada nilai Akaike Information Criterion (AIC) dan adjusted R² untuk mendapatkan model yang paling efisien dan akurat. Uji multikolinearitas menggunakan Variance Inflation Factor (VIF) juga dilakukan untuk memastikan stabilitas koefisien regresi.
+
+Hasil penelitian menunjukkan bahwa pasien DMT2 memiliki nilai baPWV yang secara signifikan lebih tinggi dibandingkan kelompok kontrol sehat (p < 0,001). Hubungan ini tetap kuat dan signifikan dalam model regresi multivariat final (model spline), di mana status diabetes terbukti menjadi prediktor independen peningkatan baPWV (β = 0,657; p = 0,021) setelah mengontrol faktor perancu seperti usia, jenis kelamin, dan denyut jantung. Sebaliknya, untuk komplians aorta, meskipun analisis univariat awal menunjukkan nilai yang lebih rendah secara signifikan pada kelompok DMT2 (p < 0,001), perbedaan ini menjadi tidak signifikan secara statistik (p = 0,274) pada model regresi multivariat. Hal ini mengindikasikan bahwa variasi komplians aorta lebih dipengaruhi oleh faktor hemodinamik lain yang dimasukkan dalam model. Serupa dengan itu, tidak ditemukan perbedaan signifikan pada komplians perifer antara kedua kelompok. Pada subanalisis intrakelompok DMT2 (n=28), tidak ditemukan hubungan yang signifikan antara skor aDCSI dengan ketiga parameter vaskular.
+
+Kesimpulan utama dari penelitian ini adalah baPWV merupakan indikator yang robust dan konsisten dalam mendeteksi perubahan vaskular pada pasien DMT2, sementara parameter komplians (aorta dan perifer) yang diestimasi dari bentuk gelombang nadi tidak menunjukkan perbedaan yang signifikan setelah penyesuaian dengan faktor perancu. Sumbangan penelitian ini adalah memberikan bukti empiris mengenai perbedaan dampak DMT2 terhadap berbagai parameter vaskular, serta menyoroti superioritas baPWV sebagai penanda kerusakan vaskular subklinis dibandingkan parameter komplians turunan dalam konteks populasi ini. Hasil ini mendukung potensi penggunaan baPWV sebagai alat skrining noninvasif dalam praktik klinis untuk identifikasi dini risiko kardiovaskular pada pasien DMT2.
+
+Kata kunci: kekakuan arteri, komplians vaskular, diabetes melitus tipe 2, pulse wave velocity
+
+
+ABSTRACT
+
+The Association of Type 2 Diabetes Mellitus with Brachial-Ankle Pulse Wave Velocity and Vascular Compliance
+
+
+By
+Wikan Priambudi
+NIM: 18321011
+(Undergraduate Program in Biomedical Engineering)
+
+
+
+Type 2 Diabetes Mellitus (T2DM) is a global health problem with a continuously increasing prevalence, including in Indonesia, which ranks fifth in the world. This disease significantly increases the risk of cardiovascular complications, which are the primary cause of mortality in its sufferers. One of the progressive vascular manifestations of T2DM is an increase in arterial stiffness, which can be noninvasively measured using brachial-ankle pulse wave velocity (baPWV). This increase in arterial stiffness is theoretically closely related to a decrease in vascular compliance or flexibility. Although many studies have compared arterial stiffness between T2DM groups and healthy individuals, not many have simultaneously examined vascular compliance, especially when estimated from pulse wave analysis based on hemodynamic models whose validity is still debated.
+
+This study aims to comprehensively investigate the differences in vascular parameters, including baPWV, aortic compliance, and peripheral compliance, between a group of T2DM patients and a healthy control group. Additionally, this study conducts a secondary analysis on a subgroup of T2DM patients to explore the relationship between the severity of complications, measured by the adapted Diabetes Complication Severity Index (aDCSI), and these vascular parameters.
+
+This study employed a cross-sectional design involving a total of 93 participants, consisting of 45 T2DM patients and 48 individuals as a healthy control group. Data were collected from secondary datasets and direct recruitment at health facilities, using consecutive sampling. Vascular parameters, including baPWV, aortic compliance, and peripheral compliance, were measured using the noninvasive NIVA device. Statistical analysis was performed in stages, starting from descriptive statistics, inter-group difference tests (independent t-test or Mann-Whitney U), to multivariate regression analysis. To address potential non-linear relationships, various regression models were explored, including OLS, polynomial, and spline. The final model selection was based on the Akaike Information Criterion (AIC) and adjusted R² values to obtain the most efficient and accurate model. Multicollinearity was checked using the Variance Inflation Factor (VIF) to ensure the stability of the regression coefficients.
+
+The results showed that T2DM patients had significantly higher baPWV values compared to the healthy control group (p < 0,001). This relationship remained strong and significant in the final multivariate regression model (spline model), where diabetes status proved to be an independent predictor of increased baPWV (β = 0,657; p = 0,021) after controlling for confounding factors such as age, gender, and heart rate. Conversely, for aortic compliance, although the initial univariate analysis showed significantly lower values in the T2DM group (p < 0,001), this difference became statistically insignificant (p = 0,274) in the multivariate regression model. This indicates that the variation in aortic compliance is more influenced by other hemodynamic factors included in the model. Similarly, no significant difference was found in peripheral compliance between the two groups. In the intragroup sub-analysis of T2DM patients (n=28), no significant relationship was found between the aDCSI score and the three vascular parameters.
+
+The main conclusion of this study is that baPWV is a robust and consistent indicator for detecting vascular changes in T2DM patients, whereas compliance parameters (aortic and peripheral) estimated from the pulse waveform do not show significant differences after adjusting for confounding factors. The contribution of this research is to provide empirical evidence regarding the differential impact of T2DM on various vascular parameters, as well as to highlight the superiority of baPWV as a marker of subclinical vascular damage compared to derivative compliance parameters in this population context. These findings support the potential use of baPWV as a noninvasive screening tool in clinical practice for the early identification of cardiovascular risk in T2DM patients.
+
+Keywords: arterial stiffness, vascular compliance, type 2 diabetes mellitus, pulse wave velocity.
+
+Pendahuluan
+
+
+Latar Belakang
+Diabetes Melitus Tipe 2 (DMT2) merupakan masalah kesehatan global yang terus meningkat, terutama di negara berkembang seperti Indonesia. Ditandai dengan gangguan metabolisme insulin, DMT2 berdampak signifikan terhadap kualitas hidup dan sistem kesehatan. Menurut International Diabetes Federation (IDF), jumlah penderita diabetes di dunia pada 2021 mencapai 537 juta dan diproyeksikan meningkat menjadi 783 juta pada 2045. Indonesia menempati peringkat kelima dunia dengan 19,5 juta kasus pada 2021, yang diperkirakan meningkat menjadi 28,6 juta pada 2045. Prevalensi diabetes di Indonesia pada 2020 sebesar 9,19% (18,69 juta kasus) diproyeksikan naik menjadi 16,09% (40,7 juta kasus) pada 2045 tanpa intervensi, dengan kematian terkait diabetes juga meningkat signifikan (Kemkes, 2024; Wahidin dkk., 2024).
+
+DMT2 berisiko tinggi menyebabkan komplikasi kardiovaskular yang menjadi penyebab utama morbiditas dan mortalitas. Mortalitas kardiovaskular pada pasien diabetes meningkat 2-8 kali lipat, dengan sekitar 75% kematian disebabkan oleh penyakit arteri koroner. Oleh karena itu, pengelolaan faktor risiko kardiovaskular pada pasien diabetes sangat penting untuk menurunkan angka kematian dan beban penyakit (Farmaki dkk., 2021).
+
+Selain komplikasi kardiovaskular, pasien DMT2 juga dapat mengalami kekakuan arteri (arterial stiffness), yang merupakan salah satu dampak progresif dari penyakit ini. Kekakuan arteri terjadi akibat penurunan elastisitas pembuluh darah karena akumulasi advanced glycation end products (AGEs), peningkatan tonus simpatik, dan stres oksidatif. Kondisi ini dapat diukur menggunakan brachial-ankle pulse wave velocity (baPWV), yang banyak digunakan sebagai indikator noninvasif untuk menilai kekakuan arteri. Kekakuan arteri erat kaitannya dengan penurunan komplians pembuluh darah, yaitu kemampuan arteri untuk tetap elastis dalam menahan tekanan darah. Beberapa studi menunjukkan bahwa pengendalian glikemik yang baik dapat mencegah atau memperlambat perkembangan kekakuan arteri sehingga menurunkan risiko penyakit kardiovaskular pada pasien diabetes.
+
+Selain kekakuan arteri yang diukur oleh baPWV, aspek penting lain dari kesehatan vaskular adalah komplians pembuluh darah, yaitu kemampuan arteri untuk meregang secara elastis. Secara fisiologis, berbagai studi yang menggunakan metode pengukuran langsung seperti ekokardiografi secara konsisten melaporkan bahwa pasien DMT2 memiliki komplians aorta yang lebih rendah. Namun, banyak perangkat noninvasif modern, termasuk yang digunakan dalam penelitian ini, tidak mengukur komplians secara langsung, melainkan mengestimasinya dari analisis bentuk gelombang nadi dengan menggunakan asumsi dari model hemodinamik seperti Model Windkessel. Validitas dan reliabilitas dari parameter turunan berbasis model ini masih menjadi subjek perdebatan; penelitian kritis oleh Manning dkk. (2002) dan Izzo dkk. (2001) bahkan menunjukkan adanya korelasi yang sangat lemah atau tidak ada sama sekali di antara metode-metode estimasi yang berbeda.
+
+Kesenjangan metodologis inilah yang mendasari urgensi penelitian ini. Terdapat ketidakpastian apakah parameter komplians yang diestimasi melalui model Windkessel cukup sensitif untuk mendeteksi perubahan vaskular yang sama pada pasien DMT2. Sebagian besar penelitian masih berfokus pada perbandingan kekakuan arteri antara pasien DMT2 dan individu sehat, sementara keterkaitan dengan tingkat keparahan komplikasi belum banyak dieksplorasi. Skor adapted Diabetes Complications Severity Index (aDCSI) dapat digunakan untuk mengukur beban komplikasi secara objektif. Dengan demikian, penelitian ini tidak hanya membandingkan perbedaan baPWV serta komplians aorta dan perifer antara pasien DMT2 dan kontrol sehat, tetapi juga mengeksplorasi hubungan antara tingkat keparahan komplikasi (aDCSI) dan parameter vaskular tersebut sebagai analisis lanjutan. Jika hubungan ini terbukti, baPWV berpotensi menjadi penanda noninvasif yang berguna untuk memantau progresi komplikasi pada pasien DMT2.
+
+
+
+Hipotesis
+Terdapat perbedaan signifikan pada nilai baPWV dan komplians pembuluh darah antara kelompok pasien DMT2 dan kelompok kontrol sehat. Pasien DMT2 diperkirakan memiliki nilai baPWV yang lebih tinggi dan komplians yang lebih rendah.
+
+Rumusan Masalah
+Berdasarkan latar belakang, maka didapatkan rumusan masalah sebagai berikut :
+Apakah terdapat perbedaan nilai brachial-ankle pulse wave velocity (baPWV) antara pasien DMT2 dan kelompok kontrol sehat?
+Apakah terdapat perbedaan nilai komplians pembuluh darah (aorta dan perifer) antara pasien DMT2 dan kelompok kontrol sehat?
+Apakah tingkat keparahan komplikasi DMT2, yang diukur dengan skor aDCSI, berhubungan dengan perubahan parameter vaskular (baPWV, komplians aorta, dan komplians perifer) pada pasien DMT2?
+
+Tujuan Penelitian
+Berdasarkan rumusan masalah maka didapatkan tujuan sebagai berikut :
+Membandingkan nilai baPWV antara kelompok pasien DMT2 dengan kelompok kontrol sehat.
+Membandingkan nilai komplians pembuluh darah (aorta dan perifer) antara kelompok pasien DMT2 dengan kelompok kontrol sehat.
+Menganalisis hubungan antara tingkat keparahan komplikasi (skor aDCSI) dengan parameter vaskular (baPWV, komplians aorta, dan komplians perifer) pada subkelompok pasien DMT2.
+
+Batasan Masalah
+Penelitian ini dirancang dengan batasan tertentu untuk memastikan fokus dan validitas hasil yang diperoleh. Adapun batasan masalah dalam penelitian ini adalah sebagai berikut: 
+Penelitian ini menggunakan desain cross-sectional, yang berarti semua data dikumpulkan pada satu titik waktu. Konsekuensinya, desain ini hanya mampu menunjukkan adanya asosiasi antar variabel dan tidak dapat digunakan untuk menyimpulkan hubungan sebab-akibat antara DMT2 dengan perubahan vaskular.
+Ukuran sampel yang digunakan relatif kecil, dengan total 93 partisipan dan subanalisis yang hanya melibatkan 28 pasien DMT2 untuk data komplikasi aDCSI. Ukuran sampel yang terbatas ini dapat memengaruhi kekuatan statistik untuk mendeteksi hubungan yang mungkin ada dan membatasi kemampuan generalisasi hasil ke populasi yang lebih luas.
+Terdapat variabel perancu penting yang tidak terukur atau tidak dimasukkan dalam analisis akhir. Faktor-faktor seperti durasi menderita diabetes, tingkat kontrol glikemik jangka panjang (HbA1c), dan jenis medikasi spesifik yang dikonsumsi pasien tidak dianalisis. Padahal, variabel-variabel ini diketahui memiliki pengaruh kuat terhadap kesehatan vaskular; sebagai contoh, beberapa obat antidiabetes dan antihipertensi terbukti dapat memperbaiki kekakuan arteri, yang berpotensi menutupi (masking) efek sebenarnya dari status diabetes.
+Pada analisis subkelompok, penelitian ini menggunakan skor komposit adapted Diabetes Complication Severity Index (aDCSI) untuk mengukur tingkat keparahan komplikasi. Penggunaan skor agregat ini menyebabkan hilangnya granularitas informasi, karena tidak dapat dibedakan apakah skor yang tinggi berasal dari satu komplikasi berat atau beberapa komplikasi ringan. Dampak fisiologis dari setiap jenis komplikasi (misalnya nefropati vs. retinopati) terhadap kekakuan arteri bisa jadi berbeda, sebuah nuansa yang tidak dapat ditangkap oleh analisis yang hanya berbasis skor total.
+Walaupun analisis multivariat dapat mengidentifikasi beberapa variabel kontrol (kovariat) lain yang memiliki asosiasi signifikan secara statistik dengan variabel dependen, pembahasan mendalam mengenai mekanisme atau implikasi dari hubungan tersebut berada di luar ruang lingkup utama penelitian ini. Fokus utama analisis dan pembahasan akan tetap pada peran status diabetes sebagai variabel independen primer, sesuai dengan tujuan penelitian yang telah ditetapkan.
+Metodologi statistik dalam penelitian ini dibatasi pada model regresi yang berbasis Ordinary Least Squares (OLS). Meskipun eksplorasi untuk menangani hubungan non-linear dilakukan dengan menggunakan pendekatan regresi Polinomial dan Spline, serta penanganan heteroskedastisitas menggunakan robust standard errors (HC3), analisis tidak diperluas hingga mencakup model yang lebih kompleks seperti Generalized Linear Models (GLM) atau Generalized Additive Models (GAM).
+
+Metodologi
+Penyelesaian Tugas Akhir ini dilaksanakan melalui serangkaian tahapan yang sistematis dan terstruktur, mulai dari tahap persiapan hingga finalisasi laporan. Metodologi pengerjaan ini dirancang untuk memastikan setiap tujuan penelitian dapat tercapai secara komprehensif. Tahapan-tahapan tersebut diuraikan sebagai berikut:
+Tahap Persiapan dan Studi Literatur:
+Identifikasi Topik dan Perumusan Judul: Tahap awal dimulai dengan identifikasi minat penelitian pada dampak kardiovaskular dari DMT2. Melalui diskusi dan tinjauan awal, fokus penelitian dipersempit pada parameter kekakuan arteri (baPWV) dan komplians pembuluh darah, yang kemudian dirumuskan menjadi judul penelitian.
+Studi Literatur Komprehensif: Dilakukan tinjauan pustaka secara mendalam untuk membangun landasan teoretis yang kuat. Topik utama yang dikaji mencakup patofisiologi DMT2, konsep kekakuan dan komplians arteri, prinsip pengukuran baPWV, model hemodinamik (Model Windkessel), serta penggunaan adapted Diabetes Complication Severity Index (aDCSI).
+Perumusan Hipotesis dan Tujuan: Berdasarkan celah penelitian (research gap) yang teridentifikasi dari studi literatur, hipotesis penelitian dirumuskan dan tujuan penelitian ditetapkan secara spesifik dan terukur.
+Tahap Pengumpulan dan Pengolahan Data:
+Akuisisi Data: Data untuk penelitian ini diperoleh melalui dua jalur. Pertama, menggunakan dataset sekunder dari perusahaan SCNP, produsen alat NIVA, yang berisi data parameter vaskular. Kedua, melakukan rekrutmen subjek secara langsung di Klinik Pratama dan BMG ITB untuk melengkapi data klinis, termasuk skor aDCSI.
+Pembersihan dan Integrasi Data: Data mentah dari kedua sumber kemudian digabungkan. Proses ini mencakup penanganan data yang hilang (missing values), standardisasi format variabel, dan validasi untuk memastikan konsistensi dan akurasi data sebelum dianalisis.
+Tahap Analisis Statistik dan Interpretasi:
+Analisis Deskriptif dan Bivariat: Karakteristik dasar sampel dirangkum menggunakan statistik deskriptif. Selanjutnya, dilakukan analisis bivariat (uji-t, Mann-Whitney U, Chi-square) untuk membandingkan perbedaan antar kelompok dan mengidentifikasi variabel perancu potensial.
+Pemodelan Regresi Multivariat: Model regresi dibangun untuk menguji hipotesis utama dengan mengontrol variabel perancu. Proses ini melibatkan beberapa iterasi, termasuk validasi model melalui uji multikolinearitas (VIF) dan uji asumsi klasik.
+Eksplorasi Model Nonlinear: Untuk mengatasi potensi hubungan non-linear, berbagai pendekatan pemodelan (Polinomial, Spline) dieksplorasi dan dibandingkan menggunakan kriteria AIC dan adjusted R² untuk memilih model final yang paling sesuai.
+Analisis Subkelompok: Analisis sekunder dilakukan secara spesifik pada subkelompok pasien DMT2 untuk menguji hubungan antara skor aDCSI dengan parameter vaskular.
+Tahap Penulisan dan Finalisasi:
+Penyusunan Naskah Tugas Akhir: Hasil analisis dan interpretasi data kemudian dituangkan ke dalam format laporan Tugas Akhir sesuai dengan sistematika penulisan yang berlaku.
+Proses Bimbingan dan Revisi: Naskah direvisi secara berkala berdasarkan masukan dan arahan dari dosen pembimbing untuk memastikan kualitas dan kebenaran ilmiahnya.
+Finalisasi dan Persiapan Sidang: Laporan difinalisasi untuk kemudian dipertahankan dalam sidang Tugas Akhir.
+
+Sistematika Penulisan
+Laporan Tugas Akhir ini disusun dengan sistematika sebagai berikut:
+Sistematika penulisan Tugas Akhir ini disusun secara sistematis agar memudahkan pembaca dalam memahami isi penelitian. Adapun susunan penulisan dalam Tugas Akhir ini adalah sebagai berikut:
+BAB I Pendahuluan
+Bab ini berisi uraian mengenai latar belakang penelitian, hipotesis, rumusan masalah, tujuan penelitian, batasan masalah, metodologi secara singkat, sistematika penulisan, serta jadwal pelaksanaan penelitian. Bab ini memberikan gambaran umum mengenai dasar pemikiran dan arah penelitian yang dilakukan.
+BAB II Studi Pendahuluan
+Bab ini menyajikan tinjauan pustaka yang relevan dengan penelitian, meliputi teori dan konsep dasar mengenai Diabetes Melitus Tipe 2, Adapted Diabetes Complication Severity Index (aDCSI), brachial-ankle pulse wave velocity (baPWV), komplians pembuluh darah, serta Modified Windkessel Model. Kajian ini digunakan untuk memperkuat landasan teoritis dan kerangka berpikir penelitian.
+BAB III Metodologi Penelitian
+Bab ini menguraikan secara rinci metode yang digunakan dalam penelitian, meliputi desain penelitian, populasi dan sampel, kriteria inklusi dan eksklusi, variabel penelitian, instrumen dan prosedur pengumpulan data, serta metode analisis data baik deskriptif maupun inferensial.
+BAB IV Hasil dan Pembahasan
+Bab ini berisi hasil penelitian yang meliputi karakteristik subjek, perbandingan parameter vaskular antara kelompok kontrol dan DMT2, serta analisis regresi terkait pengaruh tingkat keparahan komplikasi. Selanjutnya, bab ini juga membahas hasil penelitian tersebut melalui diskusi temuan, keterbatasan penelitian, serta implikasi klinis.
+BAB V Kesimpulan dan Saran
+Bab ini memuat kesimpulan yang diperoleh dari hasil penelitian sesuai dengan tujuan yang telah ditetapkan, serta memberikan saran-saran yang dapat menjadi bahan pertimbangan bagi penelitian selanjutnya maupun aplikasi klinis.
+
+Jadwal Pelaksanaan Tugas Akhir
+Untuk menjamin kelayakan dan penyelesaian yang terstruktur, pengerjaan Tugas Akhir ini dijadwalkan secara sistematis dalam rentang waktu 12 bulan, terhitung dari September 2024 hingga Agustus 2025. Jadwal ini berfungsi sebagai panduan operasional yang mencakup target dan tenggat waktu untuk setiap tahapan utama penelitian, mulai dari studi literatur, pengurusan izin etik dan kerjasama fasilitas kesehatan, pengumpulan data primer dan sekunder, hingga analisis statistik dan finalisasi naskah. Rincian alokasi waktu untuk setiap kegiatan disajikan pada tabel di bawah ini.
+
+Tabel I.1 Jadwal Pelaksanaan Tugas Akhir
+
+
+Studi Pendahuluan
+
+
+Diabetes Melitus Tipe 2
+Diabetes Melitus (DM) menurut Perkumpulan Endokrinologi Indonesia (PERKENI, 2021) didefinisikan sebagai suatu kelompok penyakit metabolik yang memiliki karakteristik hiperglikemia persisten, yang terjadi akibat adanya kelainan pada sekresi insulin, kerja insulin, atau keduanya. Sebagai penyakit kronis, DM telah menjadi salah satu masalah kesehatan masyarakat terbesar di dunia pada abad ke-21. Dampaknya secara global sangat signifikan, International Diabetes Federation (IDF) mencatat adanya 537 juta penderita pada tahun 2021 dan memproyeksikan peningkatan menjadi 783 juta pada tahun 2045. Indonesia menempati peringkat kelima di dunia dengan 19,5 juta kasus pada tahun 2021, angka yang diperkirakan akan meningkat menjadi 28,6 juta pada tahun 2045. Di antara berbagai tipe DM, Diabetes Melitus Tipe 2 (DMT2) merupakan bentuk yang paling prevalen, mencakup sekitar 90% dari seluruh kasus diabetes. DMT2 adalah penyakit kronis yang kompleks dan progresif, ditandai oleh hiperglikemia yang timbul dari kombinasi defek metabolik. Patogenesisnya secara fundamental berpusat pada dua kelainan inti yang saling terkait: resistensi insulin dan disfungsi sel beta pankreas yang progresif (Kemkes, 2024 dan Wahidin dkk., 2024).
+
+Pada kondisi DMT2, terjadi resistensi insulin, di mana sel-sel target utama insulin, yaitu sel otot rangka, sel hati (hepatosit), dan sel lemak (adiposit) menunjukkan respons yang berkurang terhadap konsentrasi insulin yang normal. Akibatnya, proses transportasi glukosa dari aliran darah ke dalam sel-sel ini menjadi terhambat. Obesitas, terutama penumpukan lemak viseral, diakui sebagai pemicu utamanya. Jaringan adiposa yang berlebih ini akan melepaskan berbagai molekul bioaktif, termasuk asam lemak bebas dan sitokin proinflamasi, yang secara langsung mengganggu jalur pensinyalan insulin. Sebagai respons, pankreas pada awalnya akan mengkompensasi dengan memproduksi lebih banyak insulin (hiperinsulinemia kompensatoris) untuk mempertahankan homeostasis glukosa. Namun, seiring berjalannya waktu, sel-sel beta pankreas yang terus bekerja keras akan mengalami kelelahan dan kegagalan fungsi, yang dipercepat oleh fenomena glukotoksisitas dan lipotoksisitas, sehingga produksi insulin menurun dan tidak lagi adekuat. Kombinasi resistensi insulin yang memicu hiperglikemia, dan hiperglikemia yang kemudian merusak sel beta, menciptakan sebuah lingkaran setan yang menjelaskan sifat progresif dari penyakit ini (PERKENI, 2021).
+
+Pemahaman modern telah berkembang melampaui model dua-defek ini, mengungkap bahwa DMT2 adalah gangguan multiorgan sistemik yang dirangkum dalam konsep “Egregious Eleven” (PERKENI, 2021). Paradigma ini menggeser pandangan DMT2 menjadi sebuah kegagalan komunikasi metabolik yang juga melibatkan disfungsi pada hati, sel alfa pankreas, ginjal, usus, otak, dan sistem imun, yang semuanya secara aktif berkontribusi dalam mempertahankan keadaan hiperglikemik. Hiperglikemia kronis yang tidak terkontrol ini berhubungan erat dengan kerusakan, disfungsi, dan kegagalan jangka panjang berbagai organ tubuh, terutama mata, ginjal, saraf, jantung, dan pembuluh darah. DMT2 telah terbukti secara signifikan meningkatkan risiko penyakit kardiovaskular, yang menjadi penyebab utama morbiditas dan mortalitas pada pasien ini. Salah satu manifestasi vaskular yang signifikan dan menjadi fokus dalam penelitian ini adalah peningkatan kekakuan arteri (arterial stiffness), yang merupakan dampak langsung dari proses patologis DMT2. Kekakuan ini disebabkan oleh penurunan elastisitas pembuluh darah akibat beberapa mekanisme, termasuk pembentukan advanced glycation end products (AGEs) yang menyebabkan pengikatan silang berbahaya pada kolagen di dinding arteri, peningkatan tonus simpatetik, serta stres oksidatif (Prenner dkk., 2015). Dengan demikian, pengendalian glikemik yang baik menjadi sangat penting untuk mencegah atau memperlambat perkembangan kekakuan arteri ini.
+
+Penegakan diagnosis DMT2 yang akurat dan tepat waktu sangat krusial dan bergantung pada interpretasi cermat hasil pemeriksaan laboratorium yang terstandardisasi. Terdapat tiga modalitas tes utama yang direkomendasikan oleh pedoman klinis seperti Perkumpulan Endokrinologi Indonesia (PERKENI) dan American Diabetes Association (ADA). Pertama adalah Hemoglobin A1c (HbA1c), yang mengukur persentase hemoglobin terglikasi dan memberikan gambaran rata-rata kadar glukosa darah selama 2-3 bulan terakhir, dengan keunggulan tidak memerlukan puasa. Diagnosis diabetes ditegakkan jika nilai HbA1c ≥ 6,5%. Kedua adalah Glukosa Darah Puasa (GDP), yang mengukur kadar glukosa setelah puasa minimal 8 jam, nilai ≥ 126mg/dL dianggap diagnostik untuk diabetes. Ketiga adalah Tes Toleransi Glukosa Oral (TTGO), yang mengukur kadar glukosa 2 jam setelah pemberian beban 75 gram glukosa. Tes ini dianggap paling sensitif untuk menilai metabolisme glukosa secara keseluruhan, dengan nilai ≥ 200mg/dL pada pengukuran 2 jam setelah beban glukosa menjadi penanda diabetes. Pada pasien yang sudah menunjukkan gejala klasik hiperglikemia (poliuria, polidipsia, polifagia), pengukuran Glukosa Darah Sewaktu (GDS) dengan hasil ≥ 200mg/dL sudah cukup untuk menegakkan diagnosis. Mengingat DMT2 seringkali berkembang tanpa gejala selama bertahun-tahun, deteksi dini melalui skrining yang tepat sasaran menjadi kunci untuk intervensi yang dapat memperlambat progresi penyakit dan mengurangi beban komplikasinya.
+
+Adapted Diabetes Complication Severity Index
+Diabetes complications severity index (DCSI) adalah metode yang telah divalidasi untuk menilai keparahan komplikasi yang terkait dengan diabetes. Metode ini mengkategorikan komplikasi dalam tujuh domain, yaitu kardiovaskular, serebrovaskular, metabolik, ginjal, neurologis, oftalmik, dan vaskular perifer. Setiap kategori diberi skor dari 0 (tanpa komplikasi) hingga 2 (komplikasi berat), kecuali neuropati yang memiliki skor maksimum 1. Skor total DCSI dapat berkisar antara 0 hingga 13, dengan skor yang lebih tinggi menunjukkan keparahan yang lebih besar. Semakin tinggi skor, semakin besar pula risiko rawat inap dan mortalitas yang terkait dengan komplikasi tersebut (Lord dkk., 2023 dan Med dkk., 2022).
+
+DCSI dihitung menggunakan kode diagnosis ICD (International Classification of Diseases) dan parameter laboratorium seperti kreatinin serum serta tingkat protein urin. Penelitian menunjukkan bahwa bahkan peningkatan satu poin dalam DCSI berhubungan dengan peningkatan risiko rawat inap sebesar 29% dan peningkatan risiko mortalitas sebesar 34% dalam kurun waktu empat tahun (Schmidt dkk., 2019, Hu dkk., 2018, dan Med dkk., 2022). Oleh karena itu, DCSI menjadi metode yang sangat berguna dalam mengukur dampak jangka panjang dari komplikasi diabetes pada pasien dan membantu tenaga medis dalam menentukan strategi perawatan yang tepat.
+
+Namun, karena DCSI mengandalkan parameter laboratorium, penerapannya menjadi terbatas, terutama di fasilitas kesehatan yang tidak memiliki akses langsung ke data tersebut. Untuk mengatasi kendala ini adapted diabetes complications severity index (aDCSI) dikembangkan untuk mengatasi keterbatasan DCSI, terutama ketergantungannya pada data laboratorium yang sering kali tidak tersedia dalam basis data klaim. aDCSI mempertahankan struktur yang sama dengan DCSI, tetapi menghilangkan parameter laboratorium, menjadikannya lebih mudah diterapkan di berbagai tatanan perawatan kesehatan. Dengan demikian, aDCSI dapat digunakan lebih luas, termasuk di fasilitas kesehatan yang tidak memiliki akses langsung ke data laboratorium (Hu dkk., 2023 dan Med dkk., 2018).
+
+Seperti halnya DCSI, aDCSI mengkategorikan komplikasi dalam tujuh domain yang sama dan memberikan skor yang serupa, yaitu berkisar antara 0 hingga 2 untuk setiap kategori, dengan neuropati yang memiliki skor maksimum 1. Penelitian menunjukkan bahwa aDCSI tetap efektif dalam memprediksi mortalitas secara keseluruhan, mortalitas akibat penyakit kardiovaskular, serta kematian terkait diabetes, meskipun tanpa data laboratorium (Hu dkk., 2018 dan 2023 dan Sun dkk., 2024). Oleh karena itu, aDCSI dapat diandalkan dalam memantau dan menilai keparahan komplikasi diabetes, meskipun terbatas pada data yang lebih sederhana.
+
+aDCSI telah terbukti berguna dalam memprediksi rawat inap serta biaya perawatan yang berkaitan dengan komplikasi diabetes. Metode ini memberikan manfaat penting bagi tenaga medis dalam menilai keparahan komplikasi pada pasien, membantu dalam pengambilan keputusan pengobatan, serta dalam penyesuaian risiko untuk penelitian kesehatan dan studi epidemiologi (Med dkk., 2022 dan Glasheen dkk., 2017).
+
+Brachial-Ankle Pulse Wave Velocity
+Pulse wave velocity (PWV) adalah ukuran sederhana dari waktu yang dibutuhkan oleh gelombang tekanan untuk melintasi jarak tertentu. Berdasarkan hubungan intrinsiknya dengan sifat mekanik arteri melalui rumus Moens-Kortweg (, dengan E adalah Modulus Young dari dinding arteri, h adalah ketebalan dinding, r adalah radius diastolik akhir, dan  adalah densitas darah) (Lim dkk., 2008).
+
+Selain itu, PWV secara intrinsik terkait dengan elastisitas pembuluh arteri, di mana elastisitas yang lebih tinggi pada pembuluh yang lebih muda dan lebih sehat menyebabkan gelombang nadi bergerak lebih lambat. Sebaliknya, peningkatan kekakuan arteri menyebabkan propagasi gelombang nadi yang lebih cepat, menghasilkan PWV yang lebih tinggi. Komposisi pembuluh arteri, yang menjadi penanda penting kesehatan kardiovaskular, menjadikan PWV alat yang efektif untuk mengevaluasi risiko kardiovaskular dan memantau perkembangan penyakit vaskular (Pilz dkk., 2024).
+
+Berbagai teknik pengukuran telah dikembangkan untuk menentukan PWV, yang dapat diukur sepanjang berbagai jalur dalam tubuh manusia. PWV karotis-femoral diukur antara arteri karotis di leher dan arteri femoralis di pangkal paha. Jalur ini mencerminkan kekakuan arteri pada arteri sentral, khususnya aorta, yang merupakan indikator utama risiko kardiovaskular. Dalam pengukuran PWV brakial-pergelangan kaki, kecepatan diukur antara arteri brakialis di lengan dan arteri pergelangan kaki, yang mencakup jalur arteri sentral dan perifer. Selain itu, indeks vaskular kardio-pergelangan kaki menyajikan pendekatan unik dengan menyesuaikan PWV untuk variasi tekanan darah, menghasilkan ukuran yang mencerminkan kekakuan arteri dari jantung hingga pergelangan kaki, terlepas dari perubahan tekanan darah sesaat (Pilz dkk., 2024).
+
+Brachial-ankle pulse wave velocity (baPWV) dikembangkan sebagai indeks kekakuan arteri sistemik yang memiliki keunggulan dalam kemudahan penggunaan dan penerapannya dalam praktik klinis umum. Metode ini mengukur gelombang nadi pada arteri brakialis (lengan atas) dan pergelangan kaki, berbeda dengan metode carotid-femoral PWV (cfPWV) yang mengukur gelombang nadi pada arteri karotis dan femoral. Pengukuran dilakukan menggunakan manset tekanan darah dan pengukuran gelombang nadi yang dipasang di keempat ekstremitas, sehingga mudah dilakukan tanpa menyebabkan stres pada subjek (Munakata dkk., 2014).
+
+Pengukuran baPWV lebih mudah, cepat, dan tidak menimbulkan stres dibandingkan dengan cfPWV. Karena itu, penggunaannya telah berkembang pesat, khususnya di negara-negara Asia Timur seperti Jepang, Tiongkok, dan Korea Selatan. BaPWV kini digunakan secara luas di kalangan internis umum untuk evaluasi kekakuan arteri (Zhang dkk., 1992). BaPWV dihitung menggunakan formula berikut (Choi dkk., 2012).
+
+Interval waktu antara gelombang nadi brakialis (brachial waveform) dan gelombang nadi pergelangan kaki (ankle waveform) didefinisikan sebagai interval waktu antara brakium dan pergelangan kaki (). Jarak antara titik pengukuran baPWV dihitung secara otomatis berdasarkan tinggi badan subjek. Panjang lintasan dari jantung ke brakium (Lb) diukur secara eksternal dan dinyatakan dengan persamaan berikut: . Panjang lintasan dari jantung ke pergelangan kaki (La) dinyatakan dengan persamaan berikut: 
+
+Komplians Pembuluh Darah
+Komplians (compliance) pembuluh darah adalah ukuran kemampuan dinding pembuluh darah untuk mengembang (distend) dan mengempis sebagai respons terhadap perubahan tekanan. Secara fungsional, ini adalah kemampuan pembuluh darah untuk meregang dan menampung volume darah tambahan saat terjadi peningkatan tekanan transmural (tekanan dari dalam dikurangi tekanan dari luar) (Klabunde, 2023).
+
+Komplians vaskular (C) dihitung menggunakan formula berikut:
+
+Dengan ΔV adalah perubahan volume dan ΔP adalah perubahan tekanan. Perlu dicatat bahwa hubungan tekanan-volume ini tidak bersifat konstan; pembuluh darah cenderung menjadi lebih kaku (komplians menurun) pada tekanan dan volume yang lebih tinggi (Klabunde, 2023).
+
+Terdapat perbedaan signifikan antara komplians arteri dan vena. Pada kondisi tekanan rendah (kurang dari 15 mmHg), yang merupakan ciri khas sistem vena, komplians vena bisa 10 hingga 20 kali lebih besar daripada arteri. Hal ini memungkinkan vena berfungsi sebagai reservoir darah yang dapat menampung perubahan volume besar dengan perubahan tekanan yang minimal. Namun, pada tekanan yang lebih tinggi, nilai komplians vena menjadi serupa dengan arteri, sehingga vena cocok digunakan sebagai material untuk cangkok bypass arteri (arterial bypass grafts) (Klabunde, 2023).
+
+Beberapa faktor fisiologis dan patologis dapat memengaruhi komplians pembuluh darah:
+Tonus Otot Polos: Kontraksi otot polos vaskular akan menurunkan komplians, sedangkan relaksasi akan meningkatkannya. Pada arteri, penurunan komplians akibat kontraksi otot polos akan meningkatkan tekanan darah (Klabunde, 2023).
+Usia dan Penyakit: Komplians arteri, khususnya aorta, cenderung menurun seiring bertambahnya usia atau akibat penyakit seperti arteriosklerosis. Penurunan komplians ini menjadi penyebab utama peningkatan tekanan nadi (pulse pressure) pada lansia (Klabunde, 2023).
+Komplians Statis vs. Dinamis: Pengukuran komplians standar umumnya bersifat statis, yaitu diukur pada kondisi mapan. Namun, ada juga komponen dinamis. Jika volume darah meningkat secara tiba-tiba, tekanan awal akan lebih tinggi sebelum menurun ke tingkat mapan, sebuah fenomena yang disebut relaksasi stres (stress relaxation) (Klabunde, 2023).
+
+Secara umum, literatur menunjukkan bahwa komplians arteri adalah parameter klinis yang penting. Penurunan komplians arteri merupakan prediktor utama morbiditas dan mortalitas kardiovaskular, terutama pada kasus hipertensi sistolik di usia tua. Studi menunjukkan bahwa komplians arteri pada pasien hipertensi secara signifikan lebih rendah dibandingkan dengan individu sehat dengan usia yang sebanding (Westerhof dkk., 2008).
+
+Hubungan antara usia dan komplians arteri pada individu sehat bersifat kompleks. Komplians arteri (baik besar maupun kecil) ditemukan meningkat secara signifikan hingga usia sekitar 30 tahun, mencapai puncaknya, dan kemudian mulai menurun secara bertahap seiring bertambahnya usia (Gardner & Parker, 2009). Sebuah studi simulasi memperkirakan bahwa komplians arteri total dapat menurun hingga empat kali lipat dalam rentang usia 20 hingga 80 tahun (Maksuti dkk., 2016).
+
+Modified Windkessel Model
+Model Windkessel merupakan model lumped yang mendeskripsikan keseluruhan sistem arteri berdasarkan hubungan tekanan dan aliran pada titik masuknya dengan menggunakan dua parameter fisiologis. Namun, model ini tidak dapat menggambarkan fenomena di dalam pohon arteri, seperti perambatan gelombang dan refleksi gelombang (Westerhof dkk., 2008).
+
+Model Windkessel dua elemen (WK-2) memprediksi bahwa pada diastol, ketika katup aorta tertutup, tekanan akan menurun secara eksponensial dengan waktu peluruhan karakteristik RC. Dari RC yang diperoleh, resistansi perifer dapat dihitung, dan aliran darah rata-rata (keluaran jantung) didefinisikan sebagai tekanan rata-rata aorta dibagi resistansi perifer. Frank memperkirakan komplians total arteri menggunakan pulse wave velocity (PWV) pada aorta. Hal ini menunjukkan bahwa model Windkessel dan transmisi gelombang tekanan dalam aorta memberikan informasi yang saling melengkapi (Westerhof dkk., 2008).
+
+Pada tahun 1930-1940, model WK-2 diperbaiki dengan menambahkan elemen resistansi, inersia, atau efek gelombang refleksi. Namun, pengembangan ini kurang memiliki dasar fisiologis yang kuat. Dengan kemajuan dalam analisis Fourier terhadap tekanan dan aliran darah, kelemahan model WK-2 menjadi jelas, terutama pada frekuensi tinggi. Oleh karena itu, elemen impedansi karakteristik aorta ditambahkan, menghasilkan model Windkessel tiga elemen (WK-3). Impedansi karakteristik ini menjadi penghubung antara model lumped Windkessel dan aspek perambatan gelombang dalam sistem arteri (Westerhof dkk., 2008).
+
+Model WK-3 tidak dapat merepresentasikan osilasi pada modulus impedansi dan fase, serta tidak mampu menjelaskan detail tekanan aorta seperti titik infleksi atau augmentasi pada tekanan aorta. Namun, secara umum, model WK-3 mampu menggambarkan gelombang tekanan yang mendekati hasil pengukuran dan aspek global dari tekanan serta impedansi input (Westerhof dkk., 2008).
+
+Untuk mengurangi kesalahan pada rentang frekuensi rendah akibat impedansi karakteristik, elemen keempat ditambahkan pada model Windkessel (WK-4). Elemen ini berupa inersia total arteri, yang merupakan penjumlahan dari seluruh inersia dalam segmen arteri. Inersia total ini memengaruhi perilaku impedansi input pada frekuensi rendah, yang menjadi kelemahan model WK-3 (Westerhof dkk., 2008).
+
+
+Gambar II.1 Model Windkessel (Westerhof dkk., 2008)
+
+Sebagai pengembangan lebih lanjut, Model Windkessel yang dimodifikasi menawarkan deskripsi hubungan dinamis antara aliran darah aorta dan tekanan. Model ini memberikan wawasan tentang sistem kardiovaskular menggunakan model sirkuit listrik sederhana, dan telah digunakan secara klinis untuk mendeteksi kelainan pada sistem vaskular . Parameter model (, , L) dapat diturunkan dari R dan peluruhan diastolik tekanan aorta dengan mendekati bagian dari titik dicrotic hingga akhir diastol sebagai (Zhang dkk., 1992):
+
+Parameter Ai(i=1 hingga 6) ditentukan melalui analisis kontur denyut menggunakan kriteria LSE (Least Squares Error). Penelitian oleh Zhang (1992) memverifikasi akurasi model Windkessel dengan memperlakukan data aliran aorta aktual sebagai sumber eksitasi arus I(t) pada model sirkuit yang telah diturunkan, lalu membandingkan  yang dihasilkan dengan rekaman tekanan aorta aktual.
+
+
+Gambar II.2 Model Modified Windkessel (Francis, 2007)
+
+Tiga dari enam parameter yang sesuai, , , dan , bergantung pada parameter model. Tiga parameter yang tersisa, , , dan , terkait dengan kondisi awal dari variabel keadaan model, , , dan . Persamaan berikut menyajikan bentuk sederhana dari model modified Windkessel.
+
+Dengan asumsi bahwa  jauh lebih besar daripada , hubungan antara parameter fungsi yang sesuai dan parameter model disederhanakan menjadi.
+
+Jika diasumsikan bahwa resistansi diperkirakan sebagai rasio antara tekanan rata-rata dan curah jantung, maka memperkirakan , , dan  menjadi lebih sederhana. Meskipun hasil awal oleh Goldwyn dan Watt tampak menjanjikan, metode ini mendapat kritik dari banyak peneliti: mereka menunjukkan bahwa estimasi komplians distal yang dihasilkan tidak mewakili variabel yang mendasarinya. Burattini (1996) berpendapat bahwa estimasi komplians distal yang diselesaikan menggunakan metode ini adalah parameter yang bergantung pada lokasi, yang melemahkan dasar penggabungan komplians tubuh bagian atas dan komplians distal bawah menjadi satu komponen.
+
+Model Windkessel menjelaskan bahwa parameter utama sistem arteri meliputi resistansi perifer, komplians arteri total, dan impedansi karakteristik aorta. Windkessel juga digunakan dalam berbagai aplikasi, seperti memahami indeks kekakuan arteri ambulatori, yang lebih dianggap sebagai faktor kopling ventrikel-arteri daripada estimasi komplians. Selain itu, model ini dapat digunakan untuk mempelajari fungsi pompa jantung dengan memvariasikan resistansi perifer dan komplians arteri total, serta menghitung curah jantung melalui pendekatan adaptif terhadap parameter seperti resistansi perifer. Dalam bidang pengembangan jantung buatan dan katup, Windkessel membantu menguji perangkat tersebut, meskipun terbatas dalam merepresentasikan kondisi klinis yang kompleks (Francis, 2007).
+
+Metodologi Penelitian
+
+
+Desain Penelitian
+Penelitian ini menggunakan desain cross-sectional, di mana data mengenai brachial-ankle pulse wave velocity (baPWV), komplians pembuluh darah (aorta dan perifer), serta tingkat komplikasi diabetes tipe 2 (aDCSI) dikumpulkan pada satu titik waktu. Desain ini dipilih karena memungkinkan evaluasi hubungan antar variabel secara efisien tanpa perlu pengamatan longitudinal.
+
+Populasi dan Sampel
+Data penelitian diperoleh dari dua sumber: sebagian berasal dari dataset perusahaan SCNP yang merupakan produsen alat NIVA, dan sebagian lainnya dikumpulkan langsung dari Klinik Pratama dan BMG ITB. Pendekatan ini memastikan ketersediaan data lengkap untuk variabel utama sekaligus mencakup aDCSI sebagai indikator tingkat komplikasi pasien.
+
+Jumlah subjek yang diikutsertakan ditentukan berdasarkan ketersediaan data, kelayakan penelitian, dan sumber daya. Meskipun perhitungan formal menggunakan rumus Cochran mengestimasi kebutuhan sampel lebih besar, jumlah sampel yang diperoleh konsisten dengan penelitian sebelumnya mengenai kekakuan arteri pada populasi serupa, yang umumnya melibatkan 30-50 partisipan per kelompok. Pada akhir periode rekrutmen, berhasil dikumpulkan total 93 partisipan, terdiri dari 48 subjek kontrol sehat dan 45 pasien diabetes melitus tipe 2.
+
+Dari total 45 partisipan diabetes, terdapat 28 pasien DMT2 yang memiliki data lengkap untuk aDCSI, yang digunakan sebagai indikator tingkat komplikasi diabetes. Variabel ini dianalisis sebagai subanalisis untuk menilai hubungan antara tingkat komplikasi dengan kekakuan dan komplians pembuluh darah, sedangkan fokus utama penelitian tetap pada perbandingan antara pasien DMT2 dan kelompok kontrol sehat.
+
+Pengambilan sampel dilakukan dengan consecutive sampling, di mana setiap subjek yang datang ke lokasi penelitian dan memenuhi kriteria inklusi, serta tidak memenuhi kriteria eksklusi, diikutsertakan secara berurutan hingga periode rekrutmen berakhir.
+
+Kriteria Inklusi dan Eksklusi
+Kriteria Inklusi
+Pasien dengan diagnosis diabetes tipe 2 berdasarkan kriteria medis.
+Berusia 35-80 tahun, rentang usia yang relevan untuk analisis kekakuan pembuluh darah.
+Bersedia berpartisipasi dengan memberikan informed consent secara tertulis.
+
+Kriteria Eksklusi
+Memiliki komorbiditas berat, seperti kanker, gagal ginjal terminal (stadium 5), atau penyakit autoimun.
+Riwayat gangguan kardiovaskular berat (stroke, gagal jantung, atau penyakit arteri koroner berat) dalam 6 bulan terakhir.
+Mengalami edema tungkai berat atau amputasi yang menghambat pengukuran baPWV.
+Penggunaan obat vasodilator kuat yang dimulai dalam 1 bulan terakhir.
+Mengalami gangguan mental atau kognitif yang menghambat partisipasi.
+
+Variabel Penelitian
+Variabel Independen
+Variabel independen dalam penelitian ini adalah status diabetes, yang merupakan variabel kategorikal dengan dua tingkatan:
+Kelompok pasien diabetes melitus tipe 2 (DMT2)
+Kelompok kontrol sehat
+
+Variabel ini menjadi faktor utama yang dianalisis hubungannya dengan kekakuan dan komplians pembuluh darah. Selain itu, pada subanalisis, digunakan pula skor adapted Diabetes Complications Severity Index (aDCSI) sebagai indikator tingkat komplikasi pasien diabetes.
+
+Variabel Dependen
+Variabel dependen yang akan diukur dan dianalisis adalah:
+Brachial-ankle pulse wave velocity (baPWV) (m/s), sebagai indikator kekakuan pembuluh darah.
+Komplians pembuluh darah, yang terdiri atas:
+Komplians aorta (ml/mmHg)
+Komplians perifer (ml/mmHg)
+
+Variabel Kontrol
+Variabel kontrol yang dicatat dan dianalisis untuk mengurangi bias antara kelompok adalah:
+Usia (tahun)
+Jenis kelamin
+Indeks massa tubuh (IMT) (kg/m2)
+Tekanan darah (mmHg)
+Ankle-brachial index (ABI)
+Indeks augmentasi
+Indeks kekakuan (cm/s)
+
+Variabel kontrol ini digunakan dalam analisis untuk menyesuaikan pengaruh status diabetes terhadap baPWV maupun komplians pembuluh darah.
+
+Instrumen dan Prosedur Pengumpulan Data
+Instrumen Penelitian
+Brachial-Ankle Pulse Wave Velocity (baPWV)
+Pengukuran dilakukan menggunakan alat NIVA. Protokol standar diikuti untuk menilai tingkat kekakuan arteri (baPWV) serta komplians pembuluh darah. Untuk memastikan reliabilitas alat NIVA yang digunakan dalam penelitian ini, dilakukan uji presisi dengan pengukuran berulang pada subjek yang sama. Hasil pengukuran ditampilkan dalam bentuk coefficient of variation dari beberapa parameter hemodinamik, yaitu baPWV, komplians aorta, komplians perifer, indeks kekakuan, indeks augmentasi, tekanan darah sistolik dan diastolik pada lengan serta kaki, dan denyut jantung. Nilai simpangan baku masing-masing parameter disajikan pada tabel III.1, yang menunjukkan konsistensi hasil pengukuran alat.
+
+Tabel III.1 Standar Deviasi Hasil Pengukuran Berulang Menggunakan Alat NIVA
+
+
+Adaptive Diabetic Complication Severity Index (aDCSI)
+Skor aDCSI dihitung berdasarkan asesmen oleh peneliti menggunakan data rekam medis, mencakup tujuh domain komplikasi: penyakit kardiovaskular, nefropati, retinopati, penyakit pembuluh darah perifer, stroke, neuropati, dan gangguan metabolik. Setiap kategori diberi nilai 0-2, di mana 0 menunjukkan tidak ada komplikasi dan 2 menunjukkan komplikasi berat. Skor ini hanya tersedia untuk 28 dari 45 pasien DMT2 dan dianalisis sebagai subanalisis.
+
+Variabel Kontrol:
+Indeks Massa Tubuh (IMT): Dihitung dari berat badan (kg) dibagi tinggi badan (m²).
+Tekanan Darah: Diukur menggunakan sphygmomanometer digital atau manual setelah pasien beristirahat.
+ABI, Indeks Augmentasi, Indeks Kekakuan: Diukur menggunakan alat NIVA sesuai protokol standar.
+Demografi dan Faktor Risiko Lain: Usia, jenis kelamin, dan status merokok dikumpulkan melalui wawancara atau kuesioner.
+
+Prosedur Pengumpulan Data
+Rekrutmen Partisipan
+Pasien direkrut dari fasilitas kesehatan Klinik Pratama dan Klinik BMG ITB berdasarkan kriteria inklusi dan eksklusi yang telah ditetapkan.
+Pasien yang setuju untuk berpartisipasi diminta untuk membaca dan menandatangani lembar persetujuan (informed consent).
+
+Pengumpulan Data Demografi dan Klinis
+Data demografi seperti usia, jenis kelamin, status merokok, dan tingkat aktivitas fisik dikumpulkan melalui wawancara langsung atau kuesioner.
+Pengukuran variabel klinis dilakukan dengan urutan sebagai berikut:
+Pengukuran baPWV dan komplians Pembuluh Darah:
+Pasien diinstruksikan untuk beristirahat selama 10-15 menit dalam posisi berbaring (supinasi).
+Alat NIVA digunakan untuk mengukur nilai baPWV dan data komplians pada kedua sisi tubuh secara simultan.
+Perhitungan Skor aDCSI:
+Skor aDCSI dihitung oleh peneliti berdasarkan data rekam medis pasien menggunakan pedoman aDCSI.
+Setiap kategori komplikasi diberi nilai (0 = tidak ada, 1 = sedang, 2 = berat).
+Pengukuran Variabel Kontrol:
+Berat badan dan tinggi badan diukur untuk menghitung IMT.
+Tekanan darah diukur setelah pasien beristirahat.
+
+Penyimpanan dan Pengelolaan Data
+Semua data yang terkumpul dicatat secara elektronik menggunakan perangkat lunak Google Spreadsheet untuk memastikan keamanan dan akurasi.
+Setiap partisipan diberi kode unik untuk menjaga kerahasiaan identitas selama analisis dan pelaporan.
+
+
+Metode Analisis Data
+Pembersihan dan Validasi Data
+Data mentah akan diperiksa terlebih dahulu untuk mengidentifikasi dan menangani kesalahan entri atau data yang hilang (missing data). Nilai outlier yang tidak masuk akal (misalnya, nilai baPWV yang ekstrem tanpa justifikasi klinis) akan diperiksa ulang dan divalidasi. Variabel aDCSI hanya tersedia pada 28 pasien DMT2 dengan data lengkap, sehingga analisisnya akan dilakukan sebagai subanalisis terpisah.
+
+Statistik Deskriptif
+Statistik deskriptif digunakan untuk merangkum karakteristik dasar dari kedua kelompok penelitian (pasien DMT2 dan kontrol sehat).
+Data kontinu (seperti baPWV, komplians aorta dan perifer, usia, IMT) disajikan dalam bentuk rerata (mean) dan standar deviasi, atau median dan rentang interkuartil jika distribusi tidak normal.
+Data kategorikal (seperti jenis kelamin) disajikan dalam bentuk frekuensi dan persentase.
+Normalitas distribusi data akan diuji menggunakan uji Shapiro-Wilk untuk menentukan metode analisis inferensial yang sesuai.
+
+Statistik Inferensial
+Uji Beda Dua Kelompok
+Analisis utama adalah membandingkan nilai variabel dependen (baPWV, komplians aorta, komplians perifer) antara kelompok pasien DMT2 dan kelompok kontrol sehat.
+Uji-t independen (independent t-test) digunakan jika data pada kedua kelompok terdistribusi normal.
+Uji Mann-Whitney U digunakan sebagai alternatif jika data tidak normal.
+
+Analisis Regresi Multivariat
+Analisis regresi linear multipel digunakan untuk menilai pengaruh status diabetes terhadap nilai baPWV dan komplians setelah mengontrol variabel perancu.
+Model awal dibangun dengan metode Ordinary Least Squares (OLS) yang memasukkan variabel independen dan variabel kontrol (usia, jenis kelamin, IMT, tekanan darah, ABI, indeks augmentasi, dan indeks kekakuan).
+Multikolinearitas antar variabel independen diperiksa menggunakan Variance Inflation Factor (VIF). Jika ditemukan variabel dengan VIF tinggi, dilakukan revisi model dengan mempertimbangkan penghapusan atau transformasi variabel tersebut.
+Model hasil revisi kemudian diuji terhadap asumsi klasik regresi (normalitas residual, homoskedastisitas, independensi, dan linearitas).
+Jika terdapat pelanggaran asumsi:
+Heteroskedastisitas ditangani dengan menggunakan robust standard errors (HC3).
+Hubungan nonlinear (misalnya pada variabel usia atau IMT) ditangani dengan transformasi polinomial, atau spline.
+Sebagai analisis tambahan, pada subkelompok pasien dengan diabetes tipe 2 dilakukan analisis menggunakan skor aDCSI untuk menilai hubungan antara tingkat komplikasi diabetes dan nilai baPWV serta komplians.
+
+Pemilihan Model Final
+Pemilihan model analitik final untuk setiap variabel dependen dilakukan melalui perbandingan sistematis dari beberapa pendekatan regresi. Pendekatan ini mencakup model Ordinary Least Squares (OLS) standar, OLS dengan robust standard errors (HC3) untuk menangani heteroskedastisitas, serta metode nonlinear yang lebih fleksibel seperti regresi Polinomial dan Spline untuk menangkap hubungan kompleks pada data. Kriteria utama untuk seleksi model adalah nilai Akaike Information Criterion (AIC), yang secara efektif menyeimbangkan antara kebaikan suai model (goodness-of-fit) dengan kompleksitasnya. Model dengan nilai AIC terendah diprioritaskan karena dianggap paling efisien dalam menjelaskan data tanpa menjadi terlalu rumit, sehingga mengurangi risiko overfitting. Selain AIC, pertimbangan lain mencakup nilai adjusted R², signifikansi statistik dari koefisien, serta pemenuhan asumsi-asumsi regresi. Mengingat ukuran sampel penelitian yang relatif kecil, model yang pada akhirnya dipilih adalah yang menunjukkan keseimbangan terbaik dari semua kriteria tersebut, dengan penekanan pada stabilitas, kesederhanaan, dan kemudahan interpretasi secara klinis.
+
+Hasil dan Pembahasan
+
+
+Hasil
+Karakteristik Subjek Penelitian
+Sebelum melakukan analisis lebih lanjut, deskripsi karakteristik subjek penelitian perlu disajikan untuk memberikan gambaran umum mengenai populasi yang diteliti. Karakteristik yang dilaporkan meliputi parameter vaskular, antropometri, tekanan darah, serta variabel demografis. Data disajikan dalam bentuk nilai rata-rata ± standar deviasi (SD), beserta nilai minimum dan maksimum untuk masing-masing variabel, sebagaimana ditunjukkan pada Tabel IV.1.
+
+Tabel IV.1 Statistik Deskriptif Karakteristik Keseluruhan Subjek Penelitian
+
+
+Dari tabel di atas, terlihat bahwa subjek penelitian memiliki usia rata-rata 48,08 ± 9,83 tahun dengan rentang usia 35-77 tahun. Tinggi badan rata-rata adalah 166,68 ± 8,04 cm, sementara berat badan rata-rata mencapai 69,82 ± 11,42 kg, menghasilkan nilai indeks massa tubuh (IMT) rata-rata 25,10 ± 3,61 kg/m², yang menunjukkan bahwa sebagian subjek berada pada kategori berat badan normal hingga overweight.
+
+Parameter vaskular menunjukkan nilai baPWV rata-rata 11,69 ± 1,90 m/s, sedangkan indeks augmentasi dan indeks kekakuan masing-masing sebesar 0,50 ± 0,15 dan 728,90 ± 196,94 cm/s. Nilai ABI subjek cukup normal dengan rata-rata 1,13 ± 0,09. Komplians aorta memiliki rata-rata 1,00 ± 0,50 mL/mmHg, sementara komplians perifer relatif lebih rendah, yaitu 0,06 ± 0,06 mL/mmHg, menunjukkan perbedaan elastisitas antara pembuluh darah pusat dan perifer.
+
+Tekanan darah subjek menunjukkan nilai rata-rata sistolik kaki lebih tinggi dibandingkan sistolik lengan (152,16 ± 20,96 vs 131,71 ± 16,28 mmHg), sedangkan tekanan diastolik kaki dan lengan relatif sebanding (77,32 ± 11,58 vs 80,01 ± 11,41 mmHg). Denyut jantung rata-rata subjek adalah 76,83 ± 13,37 BPM.
+
+Secara keseluruhan, karakteristik ini menggambarkan populasi penelitian yang berusia paruh baya dengan variasi antropometri dan profil vaskular yang cukup heterogen, yang memungkinkan analisis hubungan antara komplikasi diabetes dan parameter vaskular dilakukan dengan representatif.
+
+Setelah menyajikan karakteristik dasar subjek penelitian, langkah berikutnya adalah memeriksa distribusi data untuk masing-masing variabel. Pemeriksaan normalitas diperlukan untuk menentukan metode analisis statistik yang sesuai, apakah menggunakan uji parametrik atau non-parametrik. Uji normalitas dilakukan menggunakan Shapiro-Wilk test, dengan kriteria signifikansi p < 0,05 menunjukkan distribusi data menyimpang dari normal. Hasil uji normalitas untuk seluruh variabel ditunjukkan pada Tabel IV.2.
+
+
+
+
+
+Tabel IV.2 Uji Normalitas Keseluruhan Subjek
+
+
+Dari tabel di atas, terlihat bahwa beberapa variabel tidak berdistribusi normal, ditandai dengan nilai p < 0,05, antara lain ABI, baPWV, denyut jantung, indeks kekakuan, komplians aorta, komplians perifer, tekanan sistolik kaki dan lengan, tinggi badan, serta usia. Sementara itu, variabel berat badan, diastol kaki, diastol lengan, IMT, dan indeks augmentasi menunjukkan distribusi yang mendekati normal.
+
+Temuan ini penting karena menentukan pendekatan analisis selanjutnya. Variabel yang tidak normal mungkin perlu transformasi data atau dianalisis menggunakan metode non-parametrik, sedangkan variabel yang normal dapat dianalisis dengan metode parametrik. Dengan demikian, uji normalitas ini menjadi dasar dalam pemilihan strategi analisis statistik untuk menilai hubungan antara parameter vaskular, antropometri, dan faktor risiko lain pada populasi penelitian.
+
+Selain karakteristik numerik, penting juga untuk menyajikan distribusi variabel kategorik pada subjek penelitian, salah satunya adalah jenis kelamin. Informasi ini memberikan gambaran komposisi gender pada kelompok subjek, baik pada kelompok kontrol maupun kelompok pasien diabetes tipe 2 (DMT2), sehingga memudahkan interpretasi perbandingan antara kelompok.
+Tabel IV.3 Tabel Frekuensi Jenis Kelamin
+
+
+Berdasarkan tabel di atas, mayoritas subjek pada kelompok DMT2 adalah laki-laki (88,89%), sedangkan pada kelompok kontrol, proporsi laki-laki lebih rendah, yaitu 64,58%. Sebaliknya, proporsi perempuan lebih tinggi pada kelompok kontrol (35,42%) dibandingkan kelompok DMT2 (11,11%). Perbedaan distribusi jenis kelamin ini perlu diperhatikan karena gender dapat memengaruhi beberapa parameter vaskular, sehingga interpretasi hasil analisis perbandingan kelompok harus mempertimbangkan komposisi gender yang tidak seimbang ini.
+
+Perbandingan Parameter Vaskular antara Kelompok Kontrol Sehat dan Kelompok DMT2
+Sub-bab ini membahas perbandingan parameter vaskular antara kelompok kontrol sehat dan kelompok pasien dengan diabetes tipe 2 (DMT2) sebagai analisis utama penelitian ini, yang ditujukan untuk menjawab rumusan masalah utama. Analisis dilakukan secara bertahap mulai dari eksplorasi data untuk memahami perbedaan mendasar antara kedua kelompok, dilanjutkan dengan uji normalitas masing-masing variabel untuk menentukan pendekatan statistik yang sesuai.
+
+Selanjutnya, dilakukan identifikasi variabel perancu melalui uji beda antar kelompok, diikuti dengan analisis bivariat untuk menilai hubungan awal antar variabel. Analisis kemudian diperluas ke model multivariat untuk mengontrol efek perancu, termasuk pemeriksaan kolinearitas menggunakan Variance Inflation Factor (VIF). Variabel dengan VIF tinggi kemudian dihapus untuk memperoleh model multivariat yang lebih stabil.
+
+Setelah itu, model diuji terhadap asumsi klasik, meliputi uji normalitas residual menggunakan Shapiro-Wilk, uji heteroskedastisitas dengan Breusch-Pagan, uji autokorelasi menggunakan uji Lagrange Multiplier (LM), serta uji spesifikasi model melalui RESET test. Hasil dari uji asumsi klasik ini kemudian digunakan untuk menyesuaikan model akhir yang merepresentasikan hubungan antara status diabetes dengan parameter vaskular secara akurat.
+
+Eksplorasi Data
+Analisis awal dilakukan secara visual untuk mendapatkan gambaran umum mengenai hubungan antar variabel dan perbedaan distribusi antar kelompok.
+Heatmap Korelasi Variabel Numerik
+Heatmap korelasi (Gambar IV.1) digunakan untuk menggambarkan hubungan linear antar variabel numerik dalam penelitian. Terlihat bahwa baPWV memiliki korelasi positif yang cukup kuat dengan usia (r = 0,58), tekanan sistolik lengan (r = 0,65), serta tekanan sistolik kaki (r = 0,59). Temuan ini menunjukkan bahwa peningkatan usia maupun tekanan darah sistolik berhubungan dengan peningkatan kekakuan arteri.
+
+Sementara itu, komplians aorta menunjukkan pola yang berbeda, yaitu korelasi negatif yang kuat dengan denyut jantung (r = -0,72) dan korelasi positif yang kuat dengan indeks augmentasi (r = 0,71). Adapun komplians perifer menunjukkan korelasi yang lebih lemah, antara lain dengan ABI (r = 0,23), tekanan sistolik kaki (r = 0,21), dan indeks augmentasi (r = -0,14).
+
+Selain hubungan tersebut, heatmap juga memperlihatkan adanya korelasi yang sangat tinggi antar beberapa variabel prediktor, seperti tekanan sistolik lengan dan sistolik kaki (r = 0,86). Kondisi ini mengindikasikan potensi multikolinearitas yang penting untuk diperhatikan dalam analisis multivariat selanjutnya.
+
+
+Gambar IV.1 Heatmap Variabel Numerik Seluruh Sampel
+
+Boxplot Perbandingan Kelompok
+Boxplot (Gambar IV.2) digunakan untuk memvisualisasikan perbedaan distribusi variabel-variabel dependen antara kelompok kontrol (N = 48) dan kelompok DMT2 (N = 45). Secara visual, terlihat bahwa median dan sebaran nilai baPWV pada kelompok DMT2 cenderung lebih tinggi dibandingkan kelompok kontrol. Sebaliknya, median komplians pada kelompok DMT2 tampak lebih rendah.
+
+Gambar IV.2 Boxplot (a) Bapwv (b) Komplians Aorta dan (c) Komplians Perifer
+
+Uji Normalitas
+Sebelum melakukan uji perbedaan antar kelompok dan membangun model multivariat, perlu dipastikan distribusi masing-masing variabel. Uji normalitas dilakukan secara terpisah pada kelompok kontrol sehat dan kelompok DMT2 untuk menentukan pendekatan statistik yang sesuai, apakah dapat menggunakan uji parametrik atau non-parametrik. Hasil uji normalitas ditunjukkan pada Tabel IV.4 berikut.
+Tabel IV.4 Uji Normalitas Antar Kelompok
+
+
+Berdasarkan tabel IV.4, terlihat bahwa beberapa variabel memiliki distribusi normal pada salah satu kelompok tetapi tidak pada kelompok lainnya. Misalnya, ABI menunjukkan distribusi normal pada kelompok kontrol (p = 0,5443) namun tidak normal pada kelompok DMT2 (p = 0,0003). Variabel seperti BaPWV normal pada kelompok DMT2 (p = 0,1439) tetapi tidak pada kelompok kontrol (p = 0,0008).
+
+Secara keseluruhan, sebagian besar parameter vaskular dan antropometri menunjukkan pelanggaran normalitas pada minimal satu kelompok, sehingga analisis perbandingan antar kelompok perlu mempertimbangkan metode uji non-parametrik untuk variabel-variabel tersebut. Hal ini penting agar kesimpulan mengenai perbedaan antara kelompok kontrol dan DMT2 akurat dan tidak bias akibat asumsi distribusi yang tidak terpenuhi.
+
+Identifikasi Perancu
+Setelah uji normalitas dilakukan, tahap berikutnya adalah mengidentifikasi variabel yang berpotensi menjadi perancu (confounder). Variabel perancu didefinisikan sebagai variabel yang berbeda secara signifikan antara kelompok kontrol dan DMT2, sehingga berpotensi memengaruhi hubungan antara status diabetes dengan parameter vaskular yang menjadi variabel dependen, yaitu baPWV, komplians aorta, dan komplians perifer.
+
+Tabel IV.5 Uji Beda Kelompok Variabel Numerik
+
+
+Berdasarkan hasil ini, variabel numerik yang berbeda signifikan antara kelompok kontrol dan DMT2 meliputi baPWV, komplians aorta, denyut jantung, diastol kaki, diastol lengan, indeks augmentasi, indeks kekakuan, sistol kaki, sistol lengan, dan usia. Perlu dicatat bahwa baPWV, komplians aorta, dan komplians perifer merupakan variabel dependen, sehingga perbedaan pada kelompok ini merupakan fokus utama penelitian. Untuk komplians perifer, p-value tidak signifikan antar kelompok (p = 0,6892), yang menunjukkan distribusi awal antara kelompok kontrol dan DMT2 relatif mirip.
+Selanjutnya, uji perbedaan antar kelompok juga dilakukan untuk variabel kategorikal, yaitu jenis kelamin, yang disajikan pada tabel IV.6.
+
+Tabel IV.6 Uji Beda Kelompok Variabel Kategorikal
+
+
+Hasil ini menunjukkan bahwa distribusi jenis kelamin berbeda signifikan antara kelompok kontrol dan DMT2 (p = 0,012), sehingga jenis kelamin juga termasuk variabel perancu yang perlu dikontrol dalam analisis multivariat.
+
+Dengan demikian, variabel-variabel yang dianggap sebagai perancu dalam penelitian ini adalah usia, jenis kelamin, denyut jantung, diastol kaki, diastol lengan, indeks augmentasi, indeks kekakuan, sistol kaki, dan sistol lengan. Identifikasi ini menjadi dasar untuk pemilihan variabel yang akan dimasukkan ke dalam analisis bivariat dan multivariat selanjutnya, guna memastikan hubungan antara status diabetes dengan parameter vaskular dependen dianalisis secara tepat.
+
+Bivariat
+Sebelum membangun model multivariat, dilakukan analisis bivariat terpisah pada masing-masing kelompok untuk menilai hubungan awal antara variabel dependen (baPWV, komplians aorta, dan komplians perifer) dengan variabel independen atau perancu. Tujuan analisis ini adalah untuk melihat apakah pola korelasi antar variabel berbeda antara kelompok kontrol sehat dan kelompok DMT2, serta mengidentifikasi variabel yang memiliki korelasi kuat pada salah satu kelompok namun lemah pada kelompok lain.
+
+Berdasarkan tabel IV.7, pada kelompok kontrol sehat, BaPWV memiliki korelasi sedang hingga kuat dengan tekanan sistolik dan diastolik (baik kaki maupun lengan), tinggi badan, serta usia. Komplians Aorta menunjukkan korelasi negatif yang kuat dengan denyut jantung dan korelasi positif yang sangat kuat dengan indeks augmentasi, serta korelasi sedang dengan ABI dan indeks kekakuan. Hal ini menandakan bahwa pada populasi sehat, beberapa variabel hemodinamik memiliki hubungan yang jelas dengan kekakuan arteri dan komplians aorta.
+
+
+
+
+
+Tabel IV.7 Bivariat Kelompok Kontrol
+
+
+Tabel IV.8 Bivariat Kelompok DMT2
+
+
+Pada kelompok DMT2, BaPWV menunjukkan korelasi yang lebih kuat dengan denyut jantung dibanding kelompok kontrol (r = 0,664 vs r = 0,289), sementara korelasi dengan tekanan sistolik dan diastolik relatif sebanding dengan kelompok kontrol. Komplians Aorta tetap menunjukkan korelasi negatif yang kuat dengan denyut jantung dan korelasi positif dengan indeks augmentasi, namun beberapa korelasi yang signifikan pada kelompok kontrol menjadi lebih lemah atau tidak signifikan pada kelompok DMT2 (misal dengan indeks kekakuan). Komplians Perifer, yang tidak berbeda antar kelompok pada uji beda, menunjukkan beberapa korelasi baru dengan variabel antropometri dan hemodinamik pada kelompok DMT2, seperti berat badan, IMT, dan sistol kaki.
+
+Secara keseluruhan, analisis bivariat menunjukkan adanya perbedaan pola korelasi antar variabel dependen dan perancu antara kelompok kontrol dan DMT2, terutama pada hubungan BaPWV dengan denyut jantung serta Komplians Perifer dengan variabel antropometri. Temuan ini menjadi pertimbangan penting dalam membangun model dengan pengendalian variabel perancu, sehingga efek status diabetes pada parameter vaskular dapat diestimasi secara akurat.
+
+Analisis Regresi Multivariat Awal
+Setelah melakukan identifikasi variabel perancu melalui uji beda kelompok dan analisis bivariat, tahap selanjutnya adalah membangun model regresi linear awal (OLS) untuk masing-masing variabel dependen: BaPWV, Komplians Aorta, dan Komplians Perifer. Model ini memasukkan status diabetes dan variabel perancu yang telah diidentifikasi sebelumnya, termasuk usia, jenis kelamin, denyut jantung, tekanan sistolik dan diastolik (kaki dan lengan), indeks augmentasi, dan indeks kekakuan.
+
+Tabel IV.9 Hasil Model OLS Awal
+
+
+Tabel IV.9 Hasil Model OLS Awal (Lanjutan)
+
+
+Hasil model OLS awal untuk BaPWV menunjukkan bahwa model secara keseluruhan cukup baik, dengan R-squared = 0,770 dan F-statistik signifikan (p < 0,001), menandakan bahwa variabel independen secara bersama-sama berkontribusi terhadap variasi BaPWV. Secara individual, variabel yang berpengaruh signifikan meliputi status diabetes (c), denyut jantung, usia, indeks kekakuan, diastol lengan, dan semua memiliki tanda koefisien yang logis sesuai arah hubungan yang diharapkan. Variabel seperti indeks augmentasi, tekanan sistolik/diastolik tertentu, dan jenis kelamin tidak signifikan.
+
+Untuk Komplians Aorta, model awal menunjukkan R-squared = 0,767 dengan F-statistik signifikan (p < 0,001). Variabel signifikan pada model ini antara lain denyut jantung, indeks augmentasi, tekanan sistolik lengan, dan diastol lengan, sementara status diabetes (c) tidak signifikan secara langsung pada model ini. Tanda koefisien untuk denyut jantung negatif, sesuai dengan hubungan inverse yang diketahui antara denyut jantung dan komplians aorta, sedangkan indeks augmentasi positif, menunjukkan bahwa peningkatan augmentasi diiringi dengan peningkatan komplians aorta.
+
+Sementara itu, model OLS awal untuk Komplians Perifer memiliki R-squared yang relatif rendah (0,272), meskipun F-statistik tetap signifikan (p = 0,002). Variabel yang berpengaruh signifikan hanya denyut jantung (negatif) dan indeks augmentasi (negatif, borderline p = 0,049), sedangkan sebagian besar variabel lainnya tidak memberikan kontribusi signifikan terhadap variasi komplians perifer. Hal ini mengindikasikan bahwa model linear awal kurang mampu menjelaskan variasi Komplians Perifer dibanding BaPWV atau Komplians Aorta.
+
+Secara keseluruhan, hasil OLS awal ini memberikan gambaran kontribusi masing-masing variabel independen terhadap parameter vaskular dependen, sekaligus menandai variabel yang mungkin perlu dihapus atau diperbaiki dalam model selanjutnya, terutama terkait multikolinearitas yang terindikasi oleh condition number yang tinggi pada semua model (≈1,62×10⁴). Pemeriksaan lebih lanjut seperti analisis VIF dan uji asumsi klasik akan dilakukan untuk membangun model final yang lebih valid.
+
+Analisis Multikolinearitas (VIF)
+Setelah membangun model OLS awal, dilakukan pemeriksaan multikolinearitas menggunakan Variance Inflation Factor (VIF) untuk menilai apakah terdapat korelasi tinggi antar variabel independen yang dapat memengaruhi stabilitas koefisien regresi.
+
+Tabel IV.10 Hasil VIF Model OLS Awal
+
+
+Hasil pemeriksaan VIF pada model OLS awal (tabel IV.10) menunjukkan bahwa beberapa variabel memiliki nilai VIF tinggi, terutama tekanan sistolik/diastolik kaki dan lengan (VIF antara 6,9-10,2), yang menandakan adanya multikolinearitas cukup kuat. Variabel lainnya, termasuk status diabetes, denyut jantung, usia, indeks augmentasi, indeks kekakuan, dan jenis kelamin memiliki VIF relatif rendah (<5), sehingga risiko multikolinearitas pada variabel tersebut lebih rendah.
+
+Untuk mengurangi multikolinearitas, dilakukan penghapusan beberapa variabel dengan VIF tinggi yang menunjukkan korelasi kuat dengan variabel lain dalam model. Hasil VIF setelah penghapusan (tabel IV.11) menunjukkan bahwa semua variabel memiliki VIF < 5, menandakan multikolinearitas telah berhasil diminimalkan dan model menjadi lebih stabil. Variabel yang tetap dipertahankan meliputi status diabetes ©, denyut jantung, usia, indeks augmentasi, indeks kekakuan, tekanan sistolik lengan, tekanan diastolik lengan, dan jenis kelamin.
+
+
+
+Tabel IV.11 Hasil VIF Setelah Penghapusan Variabel
+
+
+Dengan kondisi ini, model siap untuk diuji lebih lanjut menggunakan uji asumsi klasik, sehingga estimasi koefisien regresi dapat dianggap lebih valid dan interpretasi efek masing-masing variabel independen terhadap parameter vaskular dapat dilakukan dengan lebih akurat.
+
+OLS Setelah Eliminasi Multikolinearitas
+Setelah melakukan penghapusan variabel yang memiliki VIF tinggi, dibangun kembali model OLS untuk masing-masing parameter vaskular dependen. Hal ini bertujuan untuk mengurangi multikolinearitas dan memastikan estimasi koefisien regresi lebih stabil.
+
+Untuk BaPWV, model OLS setelah penghapusan variabel menunjukkan R-squared = 0,766 dan F-statistik signifikan (p < 0,001), yang menunjukkan bahwa variabel independen secara bersama-sama menjelaskan variasi BaPWV dengan baik. Variabel yang tetap signifikan antara lain status diabetes, denyut jantung, usia, indeks kekakuan, dan diastol lengan. Koefisien status diabetes positif (β = 0,692, p = 0,017) menandakan bahwa pasien DMT2 memiliki BaPWV lebih tinggi dibanding kelompok kontrol, setelah dikendalikan oleh variabel lain. Variabel lain seperti indeks augmentasi, tekanan sistolik lengan, dan jenis kelamin tidak signifikan pada model ini.
+
+
+
+
+Tabel IV.12 Hasil Model Setelah Penghapusan Variabel
+
+
+Pada model Komplians Aorta, R-squared tercatat sebesar 0,766 dengan F-statistik signifikan (p < 0,001). Variabel signifikan pada model ini meliputi denyut jantung (negatif), indeks augmentasi (positif), tekanan sistolik lengan (negatif), dan diastol lengan (positif). Status diabetes tidak signifikan secara langsung pada model ini (p = 0,142), menunjukkan bahwa setelah mengendalikan variabel perancu, perbedaan komplians aorta antara kelompok DMT2 dan kontrol tidak terlalu menonjol.
+
+Untuk Komplians Perifer, model setelah penghapusan variabel menunjukkan R-squared = 0,250, sedikit menurun dibanding model awal, namun F-statistik tetap signifikan (p = 0,002). Variabel signifikan meliputi denyut jantung (negatif) dan tekanan sistolik lengan (positif), sementara status diabetes menunjukkan efek negatif namun tidak signifikan (p = 0,093). Hal ini mengindikasikan bahwa model linear masih kurang mampu menjelaskan variasi komplians perifer secara menyeluruh.
+
+Secara keseluruhan, penghapusan variabel dengan multikolinearitas tinggi berhasil menurunkan nilai VIF dan mempertahankan interpretasi logis untuk sebagian besar koefisien. Model ini menjadi basis untuk pemeriksaan asumsi klasik, termasuk uji normalitas residual, autokorelasi, heteroskedastisitas, dan spesifikasi model, sehingga dapat membangun model final yang valid untuk analisis pengaruh status diabetes terhadap parameter vaskular.
+
+Uji Asumsi
+Setelah membangun model OLS dengan variabel yang telah disesuaikan berdasarkan VIF, dilakukan pemeriksaan asumsi klasik untuk memastikan validitas model regresi. Asumsi yang diuji meliputi normalitas residual (Shapiro-Wilk test), heteroskedastisitas (Breusch-Pagan test), autokorelasi (Breusch-Godfrey LM test), dan spesifikasi model (Ramsey RESET test).
+
+Hasil uji asumsi (tabel IV.13) menunjukkan bahwa untuk BaPWV, residual tidak sepenuhnya normal, terdapat heteroskedastisitas, autokorelasi, serta masalah spesifikasi model. Kondisi ini menandakan bahwa model awal untuk BaPWV belum sepenuhnya memenuhi asumsi klasik. Oleh karena itu, tindakan lanjutan yang dilakukan adalah menggunakan model OLS dengan penyesuaian robust standard errors untuk mengatasi heteroskedastisitas dan autokorelasi, sehingga estimasi koefisien tetap valid.
+
+Tabel IV.13 Uji Asumsi
+
+
+Pada Komplians Aorta, residual juga tidak normal, tetapi tidak terdapat heteroskedastisitas maupun autokorelasi. Meski demikian, Ramsey RESET test menunjukkan adanya masalah spesifikasi model. Tindakan lanjutan yang dilakukan adalah mempertahankan model OLS sambil memperhatikan interpretasi koefisien, karena koefisien utama tetap signifikan dan model relatif stabil terhadap multikolinearitas.
+
+Untuk Komplians Perifer, residual tidak normal, terdapat heteroskedastisitas, autokorelasi, serta masalah spesifikasi model. Oleh karena itu, langkah lanjutan yang dilakukan adalah menggunakan robust standard errors pada model OLS untuk memperbaiki validitas inferensial, sambil tetap berhati-hati dalam interpretasi koefisien karena R-squared model relatif rendah.
+
+Secara keseluruhan, uji asumsi klasik menekankan perlunya penyesuaian lebih lanjut atau penggunaan pendekatan robust untuk memperoleh estimasi yang lebih valid dan interpretasi yang lebih akurat, sebelum membangun model final untuk masing-masing parameter vaskular.
+
+Model Final
+Model BaPWV
+Sebelum menyajikan model final untuk BaPWV, dilakukan eksplorasi variabel non-linear untuk meningkatkan spesifikasi model dan memperbaiki masalah spesifikasi yang terdeteksi pada uji Ramsey RESET. Pendekatan ini meliputi penambahan variabel polinomial satu per satu dan penerapan spline pada variabel-variabel yang berpotensi memiliki hubungan non-linear, seperti Indeks Augmentasi, IMT, dan Usia. Pemilihan transformasi dilakukan iteratif sampai model berhasil melewati uji RESET, menandakan spesifikasi model yang lebih baik.
+
+Tabel IV.14 Perbandingan Model BaPWV
+
+
+Tabel IV.14 menunjukkan perbandingan beberapa model untuk BaPWV. Model OLS sederhana memiliki adjusted R² 0,744 dan AIC 264,7. Setelah diterapkan robust standard errors (HC3) dengan variabel polinomial, adjusted R² meningkat menjadi 0,778 dan AIC menurun menjadi 257,3. Peningkatan lebih lanjut dicapai dengan penambahan spline pada variabel non-linear, menghasilkan adjusted R² 0,784 dan AIC 257,0, yang menandakan model terbaik dari segi kebaikan fit.
+
+Tabel IV.15 Model Final BaPWV
+
+
+Berdasarkan model final BaPWV yang menggunakan OLS dengan robust standard errors (HC3) dan penerapan spline pada variabel non-linear, hasil regresi ditunjukkan pada tabel IV.15. Model ini memiliki adjusted R² sebesar 0,784 dengan Prob-F <0,001, yang menunjukkan bahwa variabel-variabel yang dimasukkan secara keseluruhan mampu menjelaskan sekitar 78,4% variasi BaPWV dalam sampel penelitian.
+
+Tabel IV.16 Uji Asumsi Model Final BaPWV
+
+
+Hasil uji asumsi pada model regresi menunjukkan bahwa data memenuhi kriteria kelayakan model. Uji normalitas residu dengan Shapiro–Wilk menghasilkan nilai p = 0,275, sehingga tidak terdapat bukti pelanggaran asumsi normalitas. Uji heteroskedastisitas dengan Breusch–Pagan menunjukkan p = 0,167, yang berarti varians error dapat dianggap homogen. Uji autokorelasi menggunakan Breusch-Godfrey LM test memberikan nilai p = 0,271, menandakan tidak terdapat autokorelasi pada model. Selain itu, uji spesifikasi model dengan Ramsey RESET menghasilkan p = 0,123, sehingga tidak ada indikasi spesifikasi model yang salah atau kebutuhan untuk menambahkan variabel non-linear. Dengan demikian, seluruh uji asumsi mendukung bahwa model regresi yang dibangun telah sesuai dan layak untuk dianalisis lebih lanjut.
+
+Status diabetes teridentifikasi sebagai prediktor signifikan terhadap BaPWV (β=0,6570; p=0,021), menunjukkan bahwa individu dengan diabetes tipe 2 cenderung memiliki nilai BaPWV yang lebih tinggi dibandingkan kelompok kontrol, setelah dikontrol oleh variabel lain dalam model. Temuan ini menegaskan hubungan antara diabetes dan peningkatan kekakuan arteri perifer, yang sesuai dengan teori patofisiologi vaskular pada pasien diabetes.
+
+Denyut jantung juga menunjukkan pengaruh signifikan positif terhadap BaPWV (β=0,0513; p=0,001). Hal ini mengindikasikan bahwa kenaikan denyut jantung berasosiasi dengan peningkatan kekakuan arteri perifer, yang dapat terkait dengan efek hemodinamik terhadap dinding arteri dan pengaruh jangka panjang pada elastisitas vaskular.
+
+Usia, yang dimodelkan menggunakan spline untuk menangkap efek non-linear, terbukti sangat signifikan (p<0,001). Analisis spline menunjukkan bahwa efek usia terhadap BaPWV tidak bersifat linier; peningkatan BaPWV lebih tajam pada rentang usia tertentu dibandingkan rentang usia lain, menekankan pentingnya mempertimbangkan non-linearitas dalam hubungan antara usia dan kekakuan arteri.
+
+Indeks Kekakuan Arteri juga berperan signifikan (β=0,0025; p=0,007), mendukung konsep bahwa peningkatan kekakuan sistemik berkontribusi langsung terhadap BaPWV. Meskipun efeknya kecil secara numerik, kontribusinya konsisten secara statistik dan klinis relevan, karena BaPWV merupakan indikator kekakuan arteri perifer.
+
+Variabel lain seperti Jenis Kelamin (perempuan), Indeks Augmentasi, IMT (spline), Sistol Lengan, dan Diastol Lengan tidak menunjukkan signifikansi statistik pada level 0,05. Hal ini berarti, dalam model ini, perbedaan antara laki-laki dan perempuan, variasi Indeks Augmentasi atau IMT, serta tekanan sistolik dan diastolik lengan tidak memberikan kontribusi yang signifikan terhadap variasi BaPWV setelah pengendalian terhadap faktor lain.
+
+Secara keseluruhan, model final ini menekankan bahwa status diabetes, usia, denyut jantung, dan indeks kekakuan arteri adalah prediktor utama BaPWV dalam sampel penelitian. Hasil ini mengonfirmasi bahwa diabetes tipe 2 berhubungan dengan peningkatan kekakuan arteri perifer, yang harus diperhatikan dalam konteks manajemen kardiovaskular. Penerapan spline pada variabel non-linear meningkatkan kualitas model, menyesuaikan efek variabel terhadap BaPWV secara lebih akurat dibandingkan model OLS sederhana, dan menurunkan nilai AIC sehingga model lebih efisien.
+Model Komplians Aorta
+Evaluasi pemodelan regresi untuk variabel komplians aorta menunjukkan adanya permasalahan pada uji asumsi, khususnya pada uji normalitas residual Shapiro-Wilk dan uji spesifikasi model RESET. Hasil tersebut mengindikasikan kemungkinan adanya bentuk hubungan non-linear antara beberapa kovariat dengan komplians aorta. Setelah dilakukan eksplorasi lebih lanjut, ditemukan bahwa variabel usia, indeks augmentasi, dan denyut jantung memiliki pola hubungan non-linear, sehingga diperlukan pendekatan model yang lebih fleksibel.
+
+Tabel IV.17 Perbandingan Model Komplians Aorta
+
+
+Sebagai dasar pemilihan model terbaik, evaluasi dilakukan menggunakan nilai Adjusted R-squared untuk menilai kekuatan penjelasan variabel independen terhadap variabel dependen, serta Akaike Information Criterion (AIC) untuk menilai keseimbangan antara akurasi dan kompleksitas model. Hasil perbandingan menunjukkan bahwa model dasar OLS memiliki nilai Adjusted R-squared sebesar 0,744 dengan AIC 15,86. Penambahan variabel polinomial meningkatkan Adjusted R-squared menjadi 0,769 dan menurunkan AIC menjadi 12,24. Namun, model dengan pendekatan spline menunjukkan performa terbaik dengan nilai Adjusted R-squared sebesar 0,789 dan AIC yang paling rendah, yaitu 6,08. Oleh karena itu, model spline dipilih sebagai model final untuk analisis komplians aorta (tabel IV.18).
+
+Hasil pengujian asumsi pada tabel IV.19 menunjukkan bahwa terdapat pelanggaran pada asumsi normalitas residu, dengan uji Shapiro-Wilk menghasilkan p < 0,001. Namun demikian, uji heteroskedastisitas Breusch–Pagan (p = 0,537) menunjukkan tidak adanya masalah varians yang tidak homogen, dan uji autokorelasi Breusch–Godfrey (p = 0,635) menegaskan tidak terdapat autokorelasi pada model. Selain itu, uji spesifikasi model dengan Ramsey RESET (p = 0,087) juga menunjukkan bahwa model tidak mengalami kesalahan spesifikasi yang berarti. Dengan demikian, meskipun terdapat keterbatasan pada aspek normalitas, secara keseluruhan model masih dapat dipertimbangkan layak untuk dianalisis lebih lanjut.
+
+Tabel IV.18 Model Final Komplians Aorta
+
+
+
+Tabel IV.19 Uji Asumsi Model Final Komplians Aorta
+
+
+Pada model final (tabel IV.18), beberapa variabel menunjukkan signifikansi statistik yang konsisten dengan literatur fisiologis. Tekanan sistol dan diastol lengan memiliki pengaruh bermakna terhadap komplians aorta (p < 0,001), dengan koefisien negatif pada tekanan sistol dan positif pada tekanan diastol, yang mencerminkan keterkaitan tekanan darah perifer terhadap elastisitas vaskular sentral. Denyut jantung yang dimodelkan dengan spline menunjukkan hubungan non-linear yang signifikan (p < 0,001), menandakan bahwa perubahan frekuensi denyut jantung berhubungan dengan variasi komplians secara tidak linier. Hal serupa terlihat pada indeks augmentasi yang juga menunjukkan hubungan non-linear signifikan (p = 0,001), sesuai dengan peran indeks ini sebagai indikator gelombang pantul dan kekakuan arteri.
+
+Sementara itu, usia yang juga dimodelkan dengan spline tidak menunjukkan signifikansi statistik (p = 0,125), meskipun tetap dicantumkan dalam model karena perannya sebagai faktor risiko penting secara biologis. Variabel lain seperti status diabetes, jenis kelamin, dan indeks massa tubuh (IMT) tidak mencapai signifikansi statistik, meskipun arah koefisien masih konsisten dengan literatur yang menyatakan adanya pengaruh potensial terhadap komplians aorta. Indeks kekakuan menunjukkan hubungan negatif yang signifikan (p = 0,023), mengindikasikan bahwa peningkatan kekakuan arteri berhubungan dengan penurunan komplians.
+
+Secara keseluruhan, model spline final memberikan penjelasan yang cukup baik dengan nilai Adjusted R-squared sebesar 0,789 (Prob-F < 0,001), sehingga dapat disimpulkan bahwa model ini mampu menangkap kompleksitas hubungan antara variabel-variabel kovariat dengan komplians aorta, terutama melalui penyesuaian terhadap bentuk hubungan non-linear.
+
+Model Komplians Perifer
+Analisis regresi untuk variabel dependen komplians perifer dilakukan melalui serangkaian pendekatan model. Pada tahap awal, model OLS standar menghasilkan nilai R2 sebesar 0,250 dengan adjusted R² 0,179 dan AIC -268,4. Namun, pemeriksaan asumsi menunjukkan bahwa model awal ini tidak sepenuhnya memenuhi syarat klasik, terutama terkait adanya indikasi heteroskedastisitas serta kemungkinan hubungan non-linear pada beberapa kovariat. Upaya perbaikan kemudian dilakukan dengan menambahkan koreksi robust standard error (HC3), variabel polinomial, serta pendekatan restricted cubic spline.
+
+Tabel IV.20 Perbandingan Model Komplians Perifer
+
+
+Model dengan kombinasi OLS + HC3 + spline memberikan kinerja paling baik, dengan peningkatan R2 menjadi 0,429 dan adjusted R² sebesar 0,317 (Prob-F <0,001), serta penurunan nilai AIC menjadi -279,7, yang lebih rendah dibandingkan model-model sebelumnya. Hal ini menunjukkan bahwa model spline lebih mampu menangkap variasi pada data, terutama dalam menggambarkan efek non-linear dari usia dan indeks augmentasi terhadap komplians perifer.
+
+Tabel IV.21 Model Final Komplians Perifer
+
+
+Tabel IV.22 Uji Asumsi Model Final Komplians Perifer
+
+
+Uji asumsi pada model final komplians aorta kelompok normal dan DMT2 menunjukkan bahwa distribusi residual tidak memenuhi asumsi normalitas berdasarkan uji Shapiro-Wilk (p < 0,001). Meskipun demikian, uji asumsi lainnya memberikan hasil yang baik, yaitu tidak ditemukan indikasi heteroskedastisitas (Breusch-Pagan, p = 0,150), tidak terdapat autokorelasi (Breusch-Godfrey LM, p = 0,204), serta model lolos uji spesifikasi fungsional (Ramsey RESET, p = 0,085). Dengan demikian, meskipun terdapat pelanggaran pada normalitas residual, model tetap dapat dipertahankan karena asumsi klasik utama regresi telah terpenuhi dan ukuran sampel memadai untuk menjamin validitas estimasi koefisien.
+
+Dalam model terbaik, kovariat yang konsisten muncul signifikan adalah usia (p=0,010) dan indeks augmentasi (p<0,01). Keduanya memperlihatkan pola hubungan non-linear dengan komplians perifer, sehingga interpretasi tidak dapat dilakukan secara linier. Misalnya, pada usia tertentu penurunan komplians perifer dapat berlangsung lebih tajam, sedangkan pada rentang usia lain hubungan terlihat lebih landai. Hal serupa terjadi pada indeks augmentasi, di mana peningkatan nilai AIx berhubungan dengan penurunan komplians perifer, tetapi dengan gradien yang bervariasi pada tingkat AIx tertentu. Pola non-linear ini penting untuk diperhatikan, karena menunjukkan adanya titik-titik kritis (threshold) fisiologis yang mungkin berimplikasi klinis.
+
+Sebaliknya, kovariat lain seperti status diabetes, jenis kelamin, IMT, tekanan darah, denyut jantung, dan indeks kekakuan tidak menunjukkan hubungan signifikan dengan komplians perifer (p>0,05). Hal ini dapat diinterpretasikan bahwa efek faktor-faktor tersebut terhadap komplians perifer mungkin lebih kecil dibandingkan usia dan AIx, atau hanya dapat terdeteksi pada populasi dengan variasi lebih besar dari yang tersedia dalam penelitian ini.
+
+Secara keseluruhan, meskipun nilai uji F menunjukkan bahwa model signifikan secara keseluruhan, rendahnya nilai R2 mengingatkan bahwa kemampuan prediksi model masih terbatas. Oleh karena itu, hasil analisis ini lebih tepat dipandang sebagai temuan eksploratif yang menegaskan pentingnya usia dan indeks augmentasi sebagai determinan utama komplians perifer, sementara peran faktor lain masih perlu dikaji lebih lanjut dengan data tambahan atau model yang lebih kompleks.
+
+Analisis Regresi: Pengaruh Tingkat Keparahan Komplikasi (aDCSI) pada Pasien DMT2
+Subbab ini membahas analisis regresi untuk mengevaluasi pengaruh tingkat keparahan komplikasi diabetes tipe 2, yang diukur menggunakan skor adapted Diabetes Complications Severity Index (aDCSI), terhadap parameter vaskular pada pasien DMT2. Analisis dilakukan secara intrakelompok untuk mengeksplorasi hubungan antara aDCSI dengan beberapa variabel dependen, yaitu kekakuan arteri (baPWV) serta komplians aorta dan komplians perifer.
+
+Analisis dimulai dengan eksplorasi data subkelompok, termasuk pemeriksaan distribusi data dan uji normalitas untuk memastikan kesesuaian metode statistik yang digunakan. Selanjutnya, hubungan antara aDCSI dan variabel dependen diuji menggunakan korelasi Spearman atau Pearson, tergantung pada distribusi data masing-masing variabel.
+
+Tahap berikutnya melibatkan identifikasi perancu potensial. Perancu ditentukan berdasarkan perubahan koefisien beta pada regresi OLS antara baPWV dan aDCSI, baik pada model sederhana maupun model yang menyesuaikan beberapa variabel confounder. Perubahan koefisien beta sebesar ≥10% dianggap signifikan dan menunjukkan adanya perancu.
+
+Setelah perancu diidentifikasi, dilakukan analisis regresi multivariat awal untuk masing-masing variabel dependen, diikuti oleh pemeriksaan multikolinearitas menggunakan Variance Inflation Factor (VIF). Model OLS kemudian diperbaiki berdasarkan hasil VIF, dan uji asumsi klasik dijalankan untuk mengevaluasi kesesuaian model.
+
+Model final ditentukan berdasarkan penyesuaian terhadap uji asumsi klasik, sehingga memastikan interpretasi pengaruh aDCSI terhadap parameter vaskular dapat dilakukan secara akurat dan valid. Hasil analisis pada subbab ini diharapkan dapat memberikan wawasan mengenai kontribusi tingkat keparahan komplikasi diabetes terhadap perubahan struktur dan fungsi vaskular pada pasien DMT2.
+
+Eksplorasi Data
+Sebelum melakukan analisis regresi multivariat untuk mengevaluasi pengaruh tingkat keparahan komplikasi diabetes (aDCSI) terhadap parameter vaskular pada pasien DMT2, dilakukan eksplorasi data dan pemeriksaan distribusi variabel. Eksplorasi ini meliputi statistik deskriptif untuk semua variabel numerik, termasuk mean, standar deviasi, nilai minimum, maksimum, serta uji normalitas Shapiro-Wilk. Pemeriksaan distribusi data ini penting untuk menentukan metode analisis korelasi dan regresi yang sesuai, serta untuk mengidentifikasi kebutuhan transformasi data atau penggunaan pendekatan non-parametrik jika distribusi tidak normal.
+
+Tabel IV.23 Statistik Deskriptif Subkelompok dengan aDCSI
+
+
+Berdasarkan tabel IV.23, sebagian besar variabel numerik menunjukkan distribusi yang tidak normal (p < 0,05), termasuk umur, tinggi badan, aDCSI, baPWV, komplians aorta, komplians perifer, indeks augmentasi, indeks kekakuan, IMT, serta tekanan darah lengan dan kaki. Variabel berat badan, denyut jantung, dan tekanan sistolik kaki menunjukkan distribusi yang mendekati normal (p > 0,05). Hasil ini menjadi pertimbangan dalam pemilihan metode korelasi dan regresi yang sesuai, sehingga untuk beberapa variabel yang tidak normal akan digunakan pendekatan non-parametrik seperti korelasi Spearman.
+
+Gambar IV.3	Distribusi (a) Bapwv, (b) Komplians Aorta, dan (c) Komplians Perifer pada Subkelompok dengan aDCSI
+
+Distribusi variabel dependen, yaitu baPWV, komplians aorta, dan komplians perifer, divisualisasikan melalui histogram. Gambar ini menunjukkan bahwa baPWV memiliki distribusi mendekati normal meskipun terdapat sedikit skew positif, sedangkan komplians aorta dan komplians perifer cenderung memiliki distribusi skew kanan yang jelas. Visualisasi ini mengonfirmasi hasil uji Shapiro-Wilk dan menjadi dasar pertimbangan dalam analisis regresi multivariat intrakelompok berikutnya.
+
+Tabel IV.24 Frekuensi Jenis Kelamin
+
+
+Distribusi jenis kelamin pada seluruh pasien penelitian menunjukkan dominasi kelompok laki-laki. Dari total 28 responden, sebanyak 26 orang (92,86%) berjenis kelamin laki-laki, sedangkan hanya 2 orang (7,14%) yang berjenis kelamin perempuan. Hal ini mengindikasikan bahwa mayoritas partisipan penelitian adalah laki-laki, sehingga representasi perempuan dalam sampel relatif kecil.
+
+Analisis Bivariat
+Setelah melakukan eksplorasi data dan pemeriksaan distribusi, tahap berikutnya adalah analisis bivariat untuk mengevaluasi hubungan awal antara tingkat keparahan komplikasi diabetes (aDCSI) dengan parameter vaskular pada pasien DMT2. Analisis bivariat dilakukan melalui dua pendekatan: uji korelasi (Pearson atau Spearman, sesuai distribusi variabel) dan regresi linear univariat (OLS). Pendekatan ini bertujuan untuk menilai kekuatan dan arah hubungan antara aDCSI dengan baPWV, komplians aorta, dan komplians perifer sebelum mempertimbangkan variabel perancu dalam analisis multivariat.
+
+Tabel IV.25 Korelasi aDCSI dan Variabel Dependen
+
+
+Tabel IV.26 Regresi Bivariat aDCSI Terhadap Variabel Dependen
+
+
+Hasil analisis korelasi menunjukkan bahwa aDCSI memiliki hubungan positif sedang dengan baPWV, namun tidak mencapai signifikansi statistik baik pada uji Pearson (r = 0,301; p = 0,119) maupun Spearman (r = 0,237; p = 0,226). Hubungan antara aDCSI dengan komplians aorta dan komplians perifer cenderung sangat lemah dan tidak signifikan (p > 0,05), dengan nilai korelasi berkisar antara -0,045 hingga 0,035.
+
+Regresi linear univariat mendukung temuan korelasi. Koefisien regresi aDCSI terhadap baPWV positif (β = 0,771), namun tidak signifikan (p = 0,119), dengan R² sebesar 0,091, yang menunjukkan bahwa variasi aDCSI hanya menjelaskan sekitar 9% variasi baPWV. Untuk komplians aorta dan komplians perifer, koefisien regresi mendekati nol dan tidak signifikan (p = 0,821 dan 0,858), dengan R² sangat rendah (<0,01).
+
+Hasil ini mengindikasikan bahwa secara bivariat, tingkat keparahan komplikasi diabetes tidak memiliki pengaruh yang signifikan terhadap parameter vaskular pada pasien DMT2. Temuan ini menjadi dasar untuk analisis multivariat intrakelompok, di mana pengaruh aDCSI akan dievaluasi lebih lanjut dengan memperhitungkan variabel perancu yang potensial.
+
+Identifikasi Perancu
+Analisis identifikasi perancu dilakukan melalui beberapa tahap. Pertama, dilakukan analisis univariat dengan regresi linier sederhana antara variabel independen (aDCSI) dan masing-masing outcome (baPWV, komplians aorta, dan komplians perifer). Analisis ini menghasilkan koefisien dasar (crude effect) yang merepresentasikan hubungan langsung aDCSI dengan outcome tanpa penyesuaian terhadap variabel lain.
+
+Selanjutnya dilakukan uji perancu satu per satu, di mana setiap variabel kandidat perancu (misalnya usia, tinggi badan, indeks massa tubuh, tekanan darah, indeks augmentasi, indeks kekakuan, dan ankle-brachial index/ABI) dimasukkan ke dalam model bersama aDCSI. Model yang digunakan adalah:
+variabel dependen ~ aDCSI + confounder
+
+Dari model tersebut diperoleh koefisien baru aDCSI (). Untuk menilai besar pengaruh masing-masing variabel terhadap hubungan aDCSI dan outcome, dihitung persentase perubahan koefisien dengan rumus:
+
+Apabila nilai absolut perubahan ≥ 10%, maka variabel tersebut dianggap sebagai perancu yang bermakna.
+
+Tabel IV.27 Perubahan Koefisien aDCSI
+
+
+Berdasarkan analisis perubahan koefisien beta antara model univariat dan model yang dikontrol oleh masing-masing variabel, diperoleh hasil bahwa beberapa variabel memiliki pengaruh yang cukup besar terhadap hubungan aDCSI dengan parameter vaskular. Kriteria yang digunakan adalah perubahan absolut koefisien ≥10%, yang menunjukkan adanya potensi peran sebagai variabel perancu.
+
+Untuk variabel dependen baPWV, variabel yang memenuhi kriteria perancu adalah tinggi badan (perubahan 20,3%), indeks augmentasi (55,3%), indeks kekakuan (-40,4%), indeks massa tubuh (25,1%), tekanan sistolik lengan (-32,9%), tekanan sistolik kaki (18,1%), tekanan diastolik kaki (-17,3%), serta ankle-brachial index/ABI (28,8%). Variabel lainnya, termasuk umur, berat badan, denyut jantung, dan jenis kelamin, tidak menunjukkan perubahan yang bermakna.
+
+Pada variabel dependen komplians aorta, hampir seluruh variabel kontrol menunjukkan perubahan koefisien beta ≥10%. Variabel dengan pengaruh paling besar adalah indeks augmentasi (643,9%), tekanan sistolik kaki (194,9%), tekanan diastolik kaki (224,8%), ABI (207,1%), serta IMT (164,5%). Bahkan, variabel dengan pengaruh paling kecil sekalipun, seperti umur aktual (-10,5%) dan denyut jantung (12,7%), masih memenuhi batas kriteria. Hal ini menunjukkan bahwa hubungan aDCSI dengan komplians aorta sangat dipengaruhi oleh berbagai faktor perancu.
+
+Sementara itu, pada variabel dependen komplians perifer, variabel yang diidentifikasi sebagai perancu meliputi umur aktual (-53,7%), berat badan (20,4%), indeks augmentasi (-357,7%), indeks kekakuan (-239,0%), IMT (-55,4%), tekanan sistolik lengan (260,9%), tekanan diastolik lengan (111,0%), tekanan sistolik kaki (-502,2%), tekanan diastolik kaki (304,1%), serta ABI (-439,0%). Hanya sedikit variabel yang tidak memenuhi kriteria, seperti tinggi badan, denyut jantung, dan jenis kelamin.
+
+Secara keseluruhan, hasil ini menunjukkan bahwa pengaruh aDCSI terhadap parameter vaskular tidak berdiri sendiri, melainkan sangat dipengaruhi oleh variabel klinis lain, terutama faktor tekanan darah, indeks kekakuan arteri, serta ukuran tubuh (IMT dan tinggi badan). Oleh karena itu, analisis multivariat pada tahap berikutnya perlu mempertimbangkan variabel-variabel tersebut sebagai perancu untuk memperoleh estimasi yang lebih akurat dan valid.
+
+Analisis Multivariat
+Setelah dilakukan identifikasi perancu, seluruh variabel yang memenuhi kriteria (perubahan absolut ≥10%) kemudian dimasukkan ke dalam model regresi linear multivariat. Analisis ini bertujuan untuk menilai pengaruh tingkat keparahan komplikasi diabetes (aDCSI) terhadap parameter vaskular dengan mempertimbangkan faktor-faktor perancu yang potensial. Model awal dibangun menggunakan metode ordinary least squares (OLS) sebelum dilakukan evaluasi multikolinearitas dengan variance inflation factor (VIF). Variabel dengan nilai VIF ≥ 10 akan dipertimbangkan untuk dihapus dari model guna mengurangi bias akibat multikolinearitas.
+
+
+Tabel IV.28 Model Multivariat Awal
+
+
+Pada outcome baPWV, model multivariat awal menunjukkan nilai R² sebesar 0,676, yang berarti sekitar 67,6% variasi baPWV dapat dijelaskan oleh aDCSI bersama dengan variabel perancu yang dimasukkan. Meskipun koefisien aDCSI tetap positif (β = 0,7815) dan cenderung serupa dengan model univariat, signifikansi statistik belum tercapai (p = 0,144). Beberapa variabel perancu tampak berpengaruh, di antaranya adalah indeks augmentasi (β = -7,0247; p = 0,061), indeks kekakuan (β = 0,0042; p = 0,064), serta tekanan diastolik kaki yang signifikan pada taraf p < 0,05 (β = 0,0719; p = 0,038).
+
+Namun demikian, hasil uji VIF menunjukkan adanya multikolinearitas yang cukup tinggi. Tiga variabel, yaitu tekanan sistolik lengan (VIF = 53,47), tekanan sistolik kaki (VIF = 55,47), dan ABI (VIF = 40,17), melebihi ambang batas VIF ≥ 10, sehingga harus dipertimbangkan untuk dieliminasi. Sementara variabel lain masih berada pada rentang VIF < 10 dan dapat dipertahankan.
+
+Berdasarkan hasil tersebut, variabel yang dipilih untuk dipertahankan dalam model baPWV adalah Indeks Augmentasi, Indeks Kekakuan, Umur Aktual, IMT, ABI, Tekanan Diastolik Kaki, dan aDCSI. Dengan komposisi ini, diharapkan model yang dihasilkan lebih stabil dan bebas dari masalah multikolinearitas berlebih, sehingga dapat digunakan sebagai model multivariat final setelah melalui uji asumsi klasik.
+
+Untuk outcome komplians aorta, model multivariat awal memperlihatkan nilai R² sebesar 0,965 dengan adjusted R² sebesar 0,933. Hal ini menunjukkan bahwa sekitar 93,3% variasi komplians aorta dapat dijelaskan oleh aDCSI bersama dengan variabel-variabel perancu yang dimasukkan dalam model. Dari sisi signifikansi, beberapa variabel terbukti berasosiasi dengan kuat, seperti umur aktual (β = 0,0262; p = 0,017), tinggi badan (β = -0,1772; p = 0,002), berat badan (β = 0,2291; p = 0,002), indeks augmentasi (β = 1,9751; p = 0,009), indeks massa tubuh (IMT, β = -0,6130; p = 0,003), dan tekanan diastolik lengan (β = 0,0388; p = 0,004). Sementara itu, koefisien aDCSI sendiri tetap negatif (β = -0,0371) tetapi tidak signifikan (p = 0,525).
+
+Meskipun model tampak menjelaskan variasi dengan sangat baik, evaluasi multikolinearitas menunjukkan adanya masalah serius. Berdasarkan uji VIF, beberapa variabel memiliki nilai jauh di atas ambang batas 10, misalnya tinggi badan (VIF = 407,45), berat badan (VIF = 913,21), IMT (VIF = 881,31), tekanan sistolik lengan (VIF = 72,75), tekanan sistolik kaki (VIF = 78,47), serta ABI (VIF = 66,02). Bahkan, beberapa variabel antropometri saling berkorelasi kuat sehingga menyebabkan redundansi dalam model.
+
+Untuk mengatasi hal tersebut, hanya variabel-variabel dengan VIF < 20 yang dipertahankan, atau variabel yang secara substansi tetap penting meskipun mendekati ambang batas. Dengan demikian, variabel yang dipilih dalam model akhir komplians aorta adalah Indeks Augmentasi, Indeks Kekakuan, Umur Aktual, Denyut Jantung, IMT, ABI, serta aDCSI.
+
+Untuk outcome komplians perifer, model multivariat awal menunjukkan nilai R² sebesar 0,607 dengan adjusted R² sebesar 0,336. Artinya, sekitar 33,6% variasi komplians perifer dapat dijelaskan oleh aDCSI dan variabel-variabel perancu yang dimasukkan. Akan tetapi, secara umum tidak terdapat variabel dengan asosiasi yang signifikan secara statistik pada model awal, termasuk aDCSI yang memiliki koefisien negatif (β = -0,0144; p = 0,187).
+
+Meskipun model menunjukkan kemampuan moderat dalam menjelaskan variasi, evaluasi multikolinearitas memperlihatkan beberapa masalah. Nilai VIF awal yang tinggi ditemukan pada beberapa variabel, terutama IMT (VIF = 14,03), tekanan sistolik lengan (VIF = 62,53), tekanan sistolik kaki (VIF = 61,62), dan ABI (VIF = 56,88). Kondisi ini menandakan adanya redundansi antarvariabel yang dapat mengganggu kestabilan estimasi koefisien.
+
+Setelah dilakukan seleksi berbasis ambang VIF (<10), model akhir hanya mempertahankan variabel-variabel dengan tingkat multikolinearitas rendah, yaitu Indeks Augmentasi, Indeks Kekakuan, Umur Aktual, IMT, ABI, serta aDCSI. Model ini lebih sederhana dan bebas dari masalah multikolinearitas serius, sehingga dapat memberikan estimasi yang lebih stabil dan dapat diinterpretasikan dengan lebih baik.
+Tabel IV.29 Multivariat setelah VIF
+
+
+Pada model dengan outcome baPWV, hasil regresi multivariat menunjukkan nilai R² sebesar 0,673 dengan adjusted R² 0,558. Hal ini menandakan bahwa sekitar 55,8% variasi baPWV dapat dijelaskan oleh aDCSI bersama variabel-variabel perancu yang dipertahankan. Meskipun koefisien aDCSI positif (β = 0,641; p = 0,106), asosiasinya tidak signifikan secara statistik. Variabel lain yang tampak berperan adalah Indeks Augmentasi (β = -7,025; p = 0,008) dan tekanan diastolik kaki (β = 0,069; p = 0,020) yang menunjukkan hubungan signifikan dengan baPWV, serta Indeks Kekakuan yang mendekati signifikansi (β = 0,0036; p = 0,053). Secara umum, model ini menunjukkan kontribusi faktor-faktor vaskular tertentu terhadap variasi baPWV, meskipun peran aDCSI sendiri belum terbukti signifikan.
+
+Untuk outcome Komplians aorta, model akhir memberikan hasil yang cukup kuat dengan R² sebesar 0,772 dan adjusted R² 0,692. Ini berarti hampir 70% variasi komplians aorta dapat dijelaskan oleh aDCSI dan variabel-variabel kovariat. Arah koefisien aDCSI negatif (β = -0,099; p = 0,277), namun tidak signifikan secara statistik. Sebaliknya, faktor yang berasosiasi signifikan dengan Komplians aorta adalah umur aktual (β = -0,024; p = 0,029) dan denyut jantung (β = -0,033; p = 0,001), keduanya menunjukkan hubungan negatif yang konsisten dengan teori fisiologi, di mana peningkatan usia dan frekuensi jantung cenderung menurunkan komplians aorta. Dengan demikian, meskipun aDCSI bukan prediktor signifikan, model ini mengonfirmasi bahwa faktor usia dan fungsi hemodinamik merupakan penentu penting Komplians aorta.
+
+Pada model Komplians perifer, kekuatan penjelasan relatif lebih rendah dengan R² sebesar 0,297 dan adjusted R² 0,097, yang berarti hanya sekitar 9,7% variasi komplians perifer yang dapat dijelaskan oleh aDCSI dan kovariat yang dipertahankan. Tidak ada variabel yang menunjukkan hubungan signifikan secara statistik, termasuk aDCSI yang memiliki koefisien negatif kecil (β = -0,007; p = 0,430). Temuan ini mengindikasikan bahwa baik aDCSI maupun faktor perancu yang diuji tidak berperan besar dalam memprediksi komplians perifer pada sampel ini. Oleh karena itu, faktor-faktor lain di luar model kemungkinan lebih dominan memengaruhi variasi Komplians perifer.
+
+Uji Asumsi
+Setelah membangun model OLS revisi untuk baPWV, komplians aorta, dan komplians perifer, langkah berikutnya adalah melakukan uji asumsi regresi. Uji asumsi dilakukan untuk memastikan bahwa model regresi memenuhi syarat klasik sehingga estimasi koefisien dapat diinterpretasikan dengan valid. Secara khusus, uji asumsi yang dilakukan meliputi:
+
+Uji normalitas residual menggunakan Shapiro-Wilk, untuk memastikan bahwa residual model berdistribusi normal. Normalitas residual penting agar inferensi statistik, seperti uji t dan uji F, valid.
+
+Uji heteroskedastisitas menggunakan Lagrange Multiplier (LM-Test) dan F-Test, untuk memeriksa apakah varians residual konstan pada seluruh nilai prediktor. Heteroskedastisitas dapat menyebabkan kesalahan standar koefisien tidak valid, sehingga uji ini penting.
+
+Uji spesifikasi model menggunakan Ramsey RESET test, untuk mendeteksi kemungkinan salah spesifikasi model, misalnya adanya variabel nonlinear yang tidak dimasukkan.
+
+Tabel IV.30 Uji Asumsi Model
+
+
+Hasil uji asumsi pada ketiga model menunjukkan temuan yang berbeda-beda sehingga diperlukan penyesuaian tindakan sesuai dengan pelanggaran yang terdeteksi. Pada model baPWV, uji normalitas residual dengan Shapiro-Wilk menghasilkan nilai p sebesar 0,141 yang lebih besar dari 0,05, sehingga dapat disimpulkan bahwa distribusi residual memenuhi asumsi normalitas. Uji Breusch-Pagan menunjukkan hasil LM-Test dengan p=0,064, mendekati batas signifikansi, sedangkan uji F memberikan p=0,044 yang menandakan adanya indikasi heteroskedastisitas. Di sisi lain, uji Ramsey RESET menghasilkan nilai F=14,09 dengan p=0,001, yang mengindikasikan spesifikasi model belum tepat. Dengan demikian, tindakan yang perlu dilakukan pada model ini adalah mempertimbangkan perbaikan spesifikasi model, misalnya melalui penambahan transformasi non-linear atau variabel interaksi, serta menggunakan estimator yang robust terhadap heteroskedastisitas.
+
+Pada model komplians aorta, uji Shapiro-Wilk juga menunjukkan p=0,150, sehingga asumsi normalitas residual terpenuhi. Namun, baik LM-Test (p=0,009) maupun F-Test (p<0,001) secara konsisten menunjukkan adanya heteroskedastisitas yang cukup kuat. Sebaliknya, uji Ramsey RESET menghasilkan p=0,726, yang berarti model tidak mengalami masalah spesifikasi. Oleh karena itu, langkah yang perlu diambil adalah mempertahankan spesifikasi model yang ada, tetapi memperbaiki perhitungan standar error menggunakan pendekatan robust agar estimasi koefisien tetap reliabel meskipun terdapat heteroskedastisitas.
+
+Sementara itu, pada model komplians perifer, hasil uji normalitas residual menunjukkan p=0,070 yang mendekati batas signifikansi, namun masih dapat diterima sebagai memenuhi asumsi normalitas. Uji heteroskedastisitas memberikan hasil yang serupa dengan model baPWV, yaitu LM-Test (p=0,047) dan F-Test (p=0,030), yang menandakan adanya indikasi heteroskedastisitas. Sedangkan uji Ramsey RESET menghasilkan p=0,117, sehingga tidak terdapat bukti adanya masalah spesifikasi model. Dengan demikian, langkah perbaikan yang diperlukan untuk model ini adalah mempertahankan spesifikasi yang ada, namun menggunakan estimasi robust untuk mengatasi heteroskedastisitas yang terdeteksi.
+
+Secara keseluruhan, hasil uji asumsi ini menunjukkan bahwa model baPWV menghadapi tantangan ganda, yaitu heteroskedastisitas dan kesalahan spesifikasi, sehingga membutuhkan perbaikan model lebih lanjut. Sebaliknya, model aorta dan perifer relatif lebih stabil dalam hal spesifikasi, namun keduanya tetap membutuhkan penyesuaian dengan estimator robust untuk memastikan reliabilitas hasil analisis.
+
+Model Final
+Model Bapwv
+Setelah dilakukan serangkaian pengujian dan perbandingan model, model terbaik untuk memprediksi baPWV dipilih berdasarkan nilai adjusted R² dan AIC. Seperti ditunjukkan pada tabel IV.31, model OLS dengan koreksi heteroskedastisitas HC3 dan penambahan variabel non-linear polinomial menghasilkan nilai adjusted R² sebesar 0,702 dan AIC terendah (83,49), sehingga dipilih sebagai model final. Model spline memang memiliki R² yang sedikit lebih tinggi (0,830), tetapi penurunan adjusted R² menunjukkan adanya risiko overfitting, sehingga secara keseluruhan model polinomial lebih stabil dan representatif.
+
+Tabel IV.31 Perbandingan Model BaPWV
+
+
+Selanjutnya, model ini diuji terhadap asumsi klasik sebagaimana ditampilkan pada tabel IV.32. Hasil uji asumsi pada model final baPWV menunjukkan bahwa residual tidak sepenuhnya berdistribusi normal berdasarkan uji Shapiro-Wilk (p = 0,022). Namun demikian, asumsi lain telah terpenuhi dengan baik, yakni tidak terdapat indikasi heteroskedastisitas (Breusch-Pagan, p = 0,055), tidak ada autokorelasi (Breusch-Godfrey LM, p = 0,090), serta model dinyatakan memiliki spesifikasi fungsional yang tepat (Ramsey RESET, p = 0,229). Dengan demikian, meskipun terdapat deviasi dari normalitas, model tetap dapat digunakan karena asumsi utama regresi linear sebagian besar terpenuhi.
+
+Tabel IV.32 Uji Asumsi Model Final BaPWV
+
+
+Hasil estimasi model final disajikan pada tabel IV.33. Dari hasil regresi, terlihat bahwa skor aDCSI memiliki arah koefisien positif (β=0,4051), namun secara statistik tidak signifikan (p=0,511). Artinya, meskipun terdapat kecenderungan bahwa peningkatan tingkat komplikasi diabetes yang lebih berat diukur dengan skor aDCSI berhubungan dengan peningkatan nilai baPWV, hubungan ini tidak terbukti secara meyakinkan dalam model. Beberapa kovariat lain juga menunjukkan arah hubungan yang konsisten dengan literatur, meskipun tidak signifikan, misalnya usia (β=0,6729; p=0,589) dan ABI (β=7,0483; p=0,407).
+
+Sebaliknya, variabel Indeks Kekakuan merupakan satu-satunya prediktor yang signifikan dalam model (β=0,0065; p=0,027). Hal ini menegaskan bahwa kekakuan arteri yang lebih tinggi berhubungan langsung dengan peningkatan baPWV, yang sesuai dengan konsep fisiologi vaskular bahwa baPWV merupakan parameter makro yang merefleksikan kekakuan pembuluh darah. Interaksi non-linear melalui variabel polinomial, seperti Indeks Augmentasi² (p=0,315), Usia² (p=0,779), maupun interaksi Indeks Augmentasi × Usia (p=0,159) tidak mencapai signifikansi, meskipun tetap berkontribusi dalam memperbaiki kecocokan model secara keseluruhan.
+
+Secara keseluruhan, model final memiliki goodness of fit yang baik dengan adjusted R² sebesar 0,702 dan probabilitas F <0,001, menunjukkan bahwa variabel independen dalam model secara bersama-sama berperan signifikan dalam menjelaskan variasi baPWV.
+
+Tabel IV.33 Model Final BaPWV
+
+
+Model final menunjukkan bahwa tingkat keparahan komplikasi diabetes (aDCSI) cenderung berhubungan positif dengan baPWV, meskipun tidak signifikan. Faktor yang secara konsisten signifikan adalah Indeks Kekakuan, yang memperkuat bukti bahwa kekakuan pembuluh darah merupakan determinan utama peningkatan baPWV.
+
+Model Komplians Aorta
+Pada model aorta, pengujian asumsi awal menunjukkan adanya heteroskedastisitas, sehingga model akhir disesuaikan dengan menggunakan robust standard errors HC3. Hasil estimasi ditunjukkan pada tabel IV.34. Secara umum, model memiliki kecocokan yang baik dengan nilai R² sebesar 0,772 dan adjusted R² sebesar 0,692. Nilai Prob-F <0,001 menunjukkan bahwa kovariat yang dimasukkan secara simultan berkontribusi signifikan dalam menjelaskan variasi nilai komplians aorta.
+
+Tabel IV.34 Model Final Komplians Aorta
+
+
+Tabel IV.35 Uji Asumsi Model Final Komplians Aorta
+
+
+Hasil uji asumsi pada model komplians aorta dengan tingkat komplikasi menunjukkan bahwa residual berdistribusi normal (Shapiro-Wilk, p = 0,242) dan tidak ditemukan autokorelasi (Breusch-Godfrey LM, p = 0,156). Model juga memiliki spesifikasi fungsional yang tepat (Ramsey RESET, p = 0,226). Namun demikian, terdapat indikasi heteroskedastisitas (Breusch-Pagan, p = 0,011). Oleh karena itu, model dianalisis dengan pendekatan robust standard errors (HC3) untuk memastikan estimasi koefisien tetap valid dan dapat diinterpretasikan dengan tepat.
+
+Dari hasil regresi, skor aDCSI memiliki arah koefisien negatif (β=-0,0987; p=0,555), menunjukkan kecenderungan bahwa semakin tinggi skor komplikasi diabetes tidak diikuti dengan peningkatan kekakuan aorta, meskipun hubungan ini tidak signifikan secara statistik. Beberapa kovariat lain, seperti Indeks Augmentasi (β=0,8277; p=0,582), Indeks Kekakuan (β=0,0006; p=0,582), usia (β=-0,0239; p=0,299), denyut jantung (β=-0,0326; p=0,135), IMT (β=-0,0186; p=0,560), serta ABI (β=-0,8127; p=0,565), juga tidak menunjukkan signifikansi statistik. Dengan demikian, tidak ada variabel independen dalam model ini yang secara individual signifikan memprediksi nilai komplians aorta.
+
+Meskipun demikian, tingginya adjusted R² (0,692) menandakan bahwa model tetap mampu menjelaskan hampir 70% variasi komplians aorta secara simultan. Artinya, meskipun tidak ada variabel tunggal yang dominan, kombinasi kovariat bersama-sama tetap memberikan penjelasan yang substansial terhadap variasi kekakuan aorta.
+
+Model final aorta yang telah dikoreksi dengan robust standard errors HC3 menunjukkan bahwa tidak ada variabel independen, termasuk skor aDCSI, yang signifikan secara individual terhadap komplians aorta. Namun, secara keseluruhan model memiliki kemampuan prediksi yang baik dengan adjusted R² sebesar 0,692, sehingga tetap relevan digunakan untuk menjelaskan variasi kekakuan aorta.
+
+Model Komplians Perifer
+Pada model perifer, pengujian awal menunjukkan adanya indikasi heteroskedastisitas, sehingga digunakan regresi linear dengan robust standard errors (HC3). Hasil estimasi ditunjukkan pada tabel IV.36. Nilai R² sebesar 0,297 dan adjusted R² hanya 0,097, yang berarti model ini hanya mampu menjelaskan sekitar 10% variasi nilai komplians perifer setelah memperhitungkan jumlah kovariat. Selain itu, uji simultan menunjukkan hasil tidak signifikan (Prob-F = 0,565), sehingga secara keseluruhan model ini tidak dapat dianggap mampu menjelaskan variasi komplians perifer dengan baik.
+
+Tabel IV.36 Model Final Komplians Perifer
+
+
+Tabel IV.37 Uji Asumsi Model Final Komplians Perifer
+
+
+Hasil uji asumsi menunjukkan bahwa residual pada model komplians perifer berdistribusi normal (Shapiro-Wilk, p = 0,242) dan tidak ditemukan autokorelasi (Breusch-Godfrey LM, p = 0,156). Spesifikasi model juga dinilai tepat (Ramsey RESET, p = 0,226). Akan tetapi, terdapat indikasi heteroskedastisitas (Breusch-Pagan, p = 0,011), sehingga digunakan pendekatan robust standard error (HC3) agar estimasi koefisien tetap reliabel dan layak diinterpretasikan.
+
+Secara individual, tidak ada variabel independen yang berhubungan signifikan dengan komplians perifer. Koefisien aDCSI (β=-0,0070; p=0,635), usia (β=0,0007; p=0,674), Indeks Augmentasi (β=0,0119; p=0,918), Indeks Kekakuan (β=2,06×10⁻⁵; p=0,779), IMT (β=0,0003; p=0,958), maupun ABI (β=0,0849; p=0,402) semuanya menunjukkan nilai p yang jauh di atas 0,05. Dengan demikian, baik secara parsial maupun simultan, tidak ada bukti kuat bahwa kovariat yang diuji berperan terhadap variasi komplians perifer.
+
+Model final perifer yang disesuaikan dengan robust standard error (HC3) menunjukkan hasil yang lemah, dengan adjusted R² rendah (0,097) dan tidak adanya variabel independen yang signifikan. Hal ini menunjukkan bahwa faktor-faktor yang diuji, termasuk skor aDCSI, tidak memiliki hubungan yang berarti terhadap kekakuan perifer. Variabel lain di luar model kemungkinan lebih relevan dalam menjelaskan variasi komplians perifer.
+
+Pembahasan
+Diskusi Temuan Variabel BaPWV
+Temuan sentral dari penelitian ini adalah adanya peningkatan kekakuan arteri yang signifikan pada kelompok pasien diabetes melitus tipe 2 (DMT2) dibandingkan dengan kelompok kontrol sehat, yang diukur melalui nilai brachial-ankle pulse wave velocity (baPWV). Hubungan ini tetap sangat kuat bahkan setelah dilakukan penyesuaian untuk faktor perancu utama seperti umur dan tekanan darah sistolik. Ini menunjukkan bahwa diabetes melitus itu sendiri memiliki dampak patologis yang unik dan independen terhadap kesehatan pembuluh darah, di luar efek penuaan atau hipertensi yang sering menyertainya.
+
+Temuan utama penelitian ini, yaitu peningkatan kekakuan arteri (baPWV) yang signifikan pada kelompok pasien DMT2, dapat dijelaskan melalui serangkaian mekanisme patofisiologis kompleks yang dipicu oleh kondisi hiperglikemia kronis. Literatur ilmiah secara konsisten menunjuk pada tiga pilar utama kerusakan vaskular pada diabetes: pembentukan advanced glycation end-products (AGEs), disfungsi endotel, dan peradangan yang dimediasi oleh stres oksidatif.
+
+Penyebab paling langsung dari kekakuan fisik pembuluh darah adalah akumulasi AGEs. Dalam kondisi hiperglikemia, terjadi reaksi nonenzimatik antara gula dengan protein berumur panjang seperti kolagen dan elastin di dinding arteri. Reaksi ini menghasilkan AGEs yang kemudian membentuk ikatan silang (crosslinks) antar protein, yang secara struktural mengubah integritas arteri (Khalid dkk., 2022). Ikatan silang ini menyebabkan hilangnya elastisitas, kekacauan pada serabut elastis, dan peningkatan deposisi kolagen, yang secara kolektif membuat dinding arteri menjadi kaku. Dinding arteri yang lebih kaku ini akan mentransmisikan gelombang nadi dengan lebih cepat, yang secara langsung terukur sebagai peningkatan nilai baPWV.
+
+Di luar perubahan struktural, diabetes juga mengganggu fungsi pembuluh darah melalui disfungsi endotel, yang merupakan ciri utama penyakit vaskular diabetik. Fungsi utama endotel adalah memproduksi Oksida Nitrat (NO), sebuah molekul vasodilator poten yang menjaga pembuluh darah tetap rileks dan fleksibel. Pada kondisi diabetes, ketersediaan hayati NO menurun drastis karena dua alasan utama. Pertama, produksi NO terganggu karena enzim yang membuatnya (eNOS) menjadi tidak berpasangan (uncoupled) dan justru menghasilkan radikal bebas. Kedua, stres oksidatif yang tinggi menghasilkan radikal superoksida yang secara aktif merusak molekul NO yang ada. Hilangnya efek relaksasi dari NO ini menyebabkan kondisi kekakuan fungsional pada arteri, yang juga berkontribusi pada peningkatan baPWV (Sena dkk., 2013).
+
+Mekanisme pemersatu yang mendasari pembentukan AGEs dan disfungsi endotel adalah stres oksidatif dan peradangan kronis. Hiperglikemia menyebabkan produksi radikal bebas superoksida yang berlebihan oleh mitokondria sel endotel. Stres oksidatif ini tidak hanya merusak NO, tetapi juga mengaktifkan berbagai jalur kerusakan lain, termasuk aktivasi Protein Kinase C (PKC) dan jalur proinflamasi seperti NF-κB, seringkali melalui interaksi AGEs dengan reseptornya (RAGE). Aktivasi ini memicu ekspresi berbagai molekul adhesi dan sitokin yang mempromosikan peradangan di dinding pembuluh darah, yang pada akhirnya mempercepat proses aterosklerosis dan kekakuan arteri. Fenomena "memori metabolik" bahkan menunjukkan bahwa kerusakan akibat poros AGEs/RAGE ini dapat terus berlanjut meskipun kadar gula darah telah terkontrol (Giacco & Brownlee, 2010).
+
+Temuan utama dari penelitian ini bahwa pasien diabetes melitus tipe 2 (DMT2) memiliki kekakuan arteri (baPWV) yang lebih tinggi secara signifikan secara umum konsisten dengan dan memperkuat bukti dari berbagai studi terdahulu yang meneliti hubungan antara diabetes dan kesehatan vaskular.
+
+Perbandingan paling langsung dapat dilakukan dengan penelitian oleh Zhang dkk., yang juga menggunakan desain studi kontrol kasus yang dicocokkan berdasarkan usia, jenis kelamin, dan IMT. Serupa dengan penelitian ini, Zhang dkk. menemukan bahwa pasien DMT2 memiliki nilai pulse wave velocity (PWV) yang secara signifikan lebih tinggi. Secara spesifik, mereka melaporkan kekakuan arteri sentral (CF-PWV) sebesar 11,78 m/s pada kelompok diabetes dibandingkan 9,95 m/s pada kelompok kontrol (P<0,001). Peningkatan kekakuan ini juga ditemukan pada arteri perifer, yang menunjukkan bahwa diabetes memberikan dampak sistemik pada pembuluh darah, sebuah kesimpulan yang didukung oleh hasil baPWV dalam penelitian ini.
+
+Analisis regresi multivariat dalam penelitian ini yang mengidentifikasi usia dan tekanan darah sistolik sebagai prediktor kuat untuk baPWV juga sangat sejalan dengan literatur. Sebuah studi cross-sectional berjudul “Determinants of arterial stiffness in patients with type 2 diabetes mellitus: a cross sectional analysis” secara spesifik meneliti faktor-faktor yang memengaruhi kekakuan arteri pada pasien DMT2 tahap awal. Studi tersebut juga menemukan bahwa usia (P < 0,001), tekanan darah sistolik (P<0,001), dan durasi menderita diabetes (P = 0,038) adalah determinan independen yang paling signifikan untuk peningkatan PWV. Temuan ini memperkuat validitas model regresi yang digunakan dalam penelitian ini dan menegaskan pentingnya mengontrol variabel-variabel perancu tersebut.
+
+Lebih jauh dari sekadar status penyakit, peran kadar gula darah itu sendiri juga terbukti penting. Studi pada populasi prediabetes dan diabetes di Korea dalam “The Association of Brachial-Ankle Pulse Wave Velocity with Acute Postprandial Hyperglycemia in Korean Prediabetic and Diabetic Subjects” menemukan bahwa lonjakan gula darah akut 30 menit setelah makan merupakan penentu paling signifikan terhadap nilai baPWV, bahkan lebih kuat dibandingkan kadar glukosa puasa. Hal ini menyoroti bahwa gangguan metabolisme glukosa secara langsung berkontribusi pada kekakuan arteri. Di sisi lain, studi kohort oleh Lou dkk. menunjukkan bahwa baPWV bukan hanya akibat, tetapi juga bisa menjadi prediktor awal untuk risiko terjadinya T2DM di masa depan, terutama pada individu yang lebih muda dan perokok. Hubungan dua arah ini menegaskan pentingnya baPWV sebagai penanda kesehatan metabolik dan vaskular.
+
+Menariknya, penelitian oleh Zhang dkk. menemukan bahwa Augmentation Index (AIx), ukuran lain dari kekakuan arteri, justru lebih rendah pada pasien diabetes dan tidak lagi signifikan setelah dilakukan penyesuaian. Mereka menyimpulkan bahwa AIx mungkin bukan indikator yang valid untuk kekakuan arteri pada populasi diabetes. Temuan ini secara tidak langsung memperkuat pilihan metode dalam penelitian ini, yang menggunakan baPWV sebagai standar emas yang lebih andal dan konsisten untuk menilai kekakuan arteri pada pasien DMT2.
+Tabel IV.38 Penelitian PWV dan DMT2
+
+
+
+Diskusi Temuan Variabel Komplians
+Berbeda dengan temuan baPWV yang menunjukkan peningkatan kekakuan arteri secara signifikan pada kelompok DMT2 (p < 0,001), analisis untuk variabel komplians aorta dan perifer tidak menunjukkan adanya perbedaan yang signifikan secara statistik antara kelompok diabetes dan kontrol. Subbab ini akan membahas temuan yang tidak terduga ini dengan membandingkannya secara kritis dengan literatur yang ada, dengan fokus pada dua penjelasan utama: kompleksitas metode pengukuran dan pengaruh faktor perancu klinis.
+
+Hasil penelitian ini, yang tidak menemukan penurunan signifikan pada komplians arteri pada pasien DMT2, pada pandangan pertama tampak berbeda dengan kesimpulan umum dari beberapa studi literatur. Sebagai contoh, studi oleh Mohty dkk. melaporkan bahwa systemic arterial compliance (SAC) ditemukan menurun secara signifikan pada pasien DMT2, dan Cavalcante dkk. juga menunjukkan adanya penurunan aortic distensibility pada pasien diabetes dibandingkan kelompok kontrol. Secara fisiologis, literatur juga mendukung bahwa diabetes mempercepat pengerasan arteri melalui pembentukan AGEs dan disfungsi endotel, yang seharusnya menurunkan kelenturan pembuluh darah.
+
+Pada pandangan pertama, hasil penelitian ini yang tidak menemukan penurunan signifikan pada komplians arteri pada pasien DMT2 tampak berbeda dengan kesimpulan umum dari berbagai studi. Literatur secara konsisten melaporkan bahwa diabetes melitus merupakan penyebab independen dan signifikan dari penurunan kelenturan pembuluh darah. Sebagai contoh, studi-studi oleh Badran dkk. (2006), Dec-Gilowska dkk. (2020), dan Dang dkk. (2024), yang menggunakan metode ekokardiografi M-mode untuk mengukur diameter aorta, secara konsisten menemukan bahwa indeks elastisitas seperti aortic distensibility (AD) dan aortic strain (AS) secara signifikan lebih rendah pada pasien DMT2. Secara fisiologis, hal ini didukung oleh mekanisme kerusakan vaskular akibat hiperglikemia, seperti pembentukan advanced glycation end-products (AGEs) dan disfungsi endotel, yang seharusnya menurunkan kelenturan pembuluh darah (Janić dkk., 2014).
+
+Namun, perbandingan langsung ini perlu dilakukan dengan sangat hati-hati, karena perbedaan hasil dapat dijelaskan oleh faktor metodologis dan klinis yang mendasar.
+
+Salah satu penjelasan paling kuat untuk temuan yang tidak signifikan dalam penelitian ini terletak pada keragaman dan keterbatasan metode estimasi komplians. Berbeda dengan baPWV yang merupakan pengukuran langsung dari kecepatan gelombang, nilai komplians dalam penelitian ini merupakan parameter turunan yang diestimasi dari analisis bentuk gelombang nadi, seringkali menggunakan asumsi dari Model Windkessel.
+
+Tinjauan kritis terhadap model ini menunjukkan adanya keterbatasan validitas dan reliabilitas yang serius. Sebuah studi krusial oleh Manning dkk. (2002), yang mengukur komplians menggunakan analisis kontur nadi diastolik (model Windkessel) di dua lokasi berbeda (arteri radialis dan tibialis posterior), menemukan tidak adanya korelasi sama sekali antara nilai komplians yang diukur di kedua lokasi tersebut (r ≈ 0). Hal ini membuktikan bahwa hasil dari model ini sangat dipengaruhi oleh sifat sirkulasi regional dan tidak dapat dianggap sebagai pengukuran “sistemik” yang tunggal dan valid.
+
+Lebih lanjut, Izzo dkk. (2001) membandingkan tiga teknik berbeda untuk mengestimasi komplians termasuk analisis kontur nadi diastolik dan menyimpulkan adanya korelasi yang lemah atau tidak ada di antara ketiganya. Para peneliti berargumen bahwa hal ini terjadi karena setiap metode mengukur properti biologis yang berbeda dari bagian sirkulasi yang berbeda. Oleh karena itu, sangat mungkin bahwa metode yang digunakan untuk menghitung komplians aorta dan komplians perifer dalam penelitian ini, yang berbasis model, mengukur aspek hemodinamik yang berbeda dibandingkan metode berbasis perubahan diameter fisik aorta melalui ekokardiografi yang digunakan oleh Badran dkk. Perbedaan metodologis fundamental inilah yang dapat menjelaskan mengapa hasil penelitian ini tidak menunjukkan penurunan komplians yang signifikan, meskipun dampak patofisiologis diabetes terhadap arteri telah terjadi (seperti yang terdeteksi oleh baPWV).
+
+Tabel IV.39 Penelitian Terkait Komplians dan DMT2
+
+
+Faktor perancu lain yang sangat penting dan tidak boleh diabaikan adalah efek terapeutik dari obat-obatan. Literatur secara eksplisit menyatakan bahwa beberapa obat antidiabetes oral seperti glitazon dan metformin, serta obat antihipertensi yang umum diresepkan pada 
+
+pasien diabetes, terbukti dapat mengurangi kekakuan arteri atau memperbaiki komplians (Janić dkk., 2014). Sangat mungkin bahwa pasien dalam kelompok DMT2 pada penelitian ini sedang dalam pengobatan yang memiliki efek kardioprotektif. Efek medikasi ini bisa jadi “menormalkan” nilai komplians pada kelompok diabetes, sehingga menutupi perbedaan yang seharusnya ada dengan kelompok kontrol yang tidak mengonsumsi obat serupa.
+
+Penjelasan kedua, dan yang mungkin paling relevan secara klinis, adalah pengaruh potensial dari terapi medikamentosa sebagai faktor perancu yang tidak terukur dalam penelitian ini. Tinjauan literatur modern secara konsisten menunjukkan bahwa banyak obat antidiabetes dan terapi terkait yang umum diresepkan memiliki efek vaskuloprotektif yang kuat, yang secara langsung dapat memperbaiki kelenturan dan mengurangi kekakuan pembuluh darah.
+
+Berdasarkan analisis mendalam terhadap beberapa studi, golongan obat seperti agonis reseptor GLP-1 dan penghambat SGLT-2 menunjukkan efek yang paling menguntungkan. Sebuah meta-analisis oleh Wang dkk. (2022) menemukan bahwa agonis reseptor GLP-1 secara signifikan meningkatkan fungsi endotel (yang diukur dengan Flow-Mediated Dilation atau FMD) dibandingkan dengan intervensi lain. Peningkatan FMD ini secara langsung merefleksikan perbaikan pada kelenturan dan kemampuan pembuluh darah untuk melebar.
+
+Selain itu, metformin, sebagai terapi lini pertama, juga terbukti dapat memperbaiki fungsi endotel dan meningkatkan produksi Oksida Nitrat (NO), molekul vasodilator poten yang menjaga pembuluh darah tetap rileks dan fleksibel (Patel dkk., 2017; Wang dkk., 2023). Terapi komplementer yang sangat umum pada pasien DMT2, yaitu statin, juga memiliki efek pleiotropik yang kuat, termasuk efek anti-inflamasi dan antioksidan yang berkontribusi pada perbaikan elastisitas arteri (Alidadi dkk., 2021).
+
+Dengan mempertimbangkan bukti-bukti ini, sangat mungkin bahwa sebagian besar pasien dalam kelompok DMT2 penelitian ini sedang menjalani satu atau lebih dari terapi tersebut. Efek positif dari obat-obatan ini berpotensi "menormalkan" atau "memperbaiki" nilai komplians pada kelompok DMT2, sehingga menutupi (masking) perbedaan yang seharusnya ada dengan kelompok kontrol yang tidak mengonsumsi obat serupa. Dengan kata lain, hasil yang tidak signifikan ini mungkin bukan berarti diabetes tidak memengaruhi komplians, melainkan efek patologisnya mungkin telah dimitigasi oleh efek terapeutik dari pengobatan yang mereka terima.
+
+Secara keseluruhan, meskipun hasil komplians dalam penelitian ini tidak signifikan dan tampak berlawanan dengan beberapa literatur, hal ini tidak serta-merta membantah dampak diabetes terhadap kesehatan vaskular. Sebaliknya, temuan ini justru menyoroti dua hal penting: pertama, kompleksitas pengukuran komplians, di mana metode estimasi berbasis model seperti Windkessel memiliki keterbatasan validitas dan sensitif terhadap dinamika hemodinamik regional; dan kedua, pentingnya mempertimbangkan faktor perancu klinis seperti efek medikasi, yang dapat memodulasi hasil akhir.
+
+Sementara baPWV memberikan gambaran kekakuan arteri sistemik yang jelas dan robust, komplians mungkin merefleksikan aspek hemodinamik yang lebih bernuansa dan sulit diinterpretasikan tanpa mempertimbangkan keterbatasan metodologis dan klinis.
+
+Diskusi Temuan Subanalisis Tingkat Keparahan Komplikasi
+Salah satu tujuan sekunder penelitian ini adalah mengeksplorasi hubungan antara tingkat keparahan komplikasi kronis, yang diukur dengan skor adapted Diabetes Complication Severity Index (aDCSI), dengan parameter vaskular pada subkelompok pasien DMT2. Secara teoritis, semakin tinggi tingkat komplikasi yang dialami pasien, seharusnya semakin buruk pula profil vaskular yang tercermin dari kekakuan arteri maupun penurunan komplians. Namun, hasil analisis regresi multivariat pada subkelompok ini (n=28) menunjukkan bahwa skor aDCSI tidak memiliki asosiasi yang signifikan dengan baPWV (p=0,167), komplians aorta (p=0,264), maupun komplians perifer (p=0,321) setelah dilakukan penyesuaian terhadap variabel perancu. Temuan ini tampak berbeda dengan hipotesis awal dan dengan sebagian literatur yang menunjukkan adanya hubungan progresif antara beban komplikasi dan kerusakan vaskular, sehingga memerlukan interpretasi yang hati-hati.
+
+Penjelasan utama dari hasil yang tidak signifikan ini kemungkinan besar terletak pada keterbatasan ukuran sampel. Subkelompok pasien yang dianalisis hanya berjumlah 28 orang, sehingga kekuatan statistik penelitian ini untuk mendeteksi asosiasi yang sebenarnya ada menjadi rendah. Dalam kondisi demikian, hubungan biologis yang lemah atau moderat bisa saja tidak terdeteksi secara signifikan. Keterbatasan ini diperkuat oleh rentang skor aDCSI yang relatif sempit, yaitu hanya 0 hingga 2, tanpa adanya pasien dengan beban komplikasi yang berat. Padahal, hubungan antara komplikasi kumulatif dengan kekakuan arteri kemungkinan bersifat dose-dependent, sehingga perbedaan yang nyata baru akan terlihat bila dibandingkan pasien dengan komplikasi ringan dengan mereka yang memiliki komplikasi berat.
+
+Selain itu, faktor klinis berupa penggunaan medikasi juga sangat mungkin berperan. Sebagian besar pasien DMT2 dalam subanalisis ini kemungkinan sedang menjalani terapi standar, baik berupa antidiabetes oral (seperti metformin atau penghambat SGLT-2), agonis reseptor GLP-1, maupun obat kardiovaskular seperti ACE inhibitor, ARB, atau statin. Literatur modern menunjukkan bahwa terapi-terapi ini memiliki efek vaskuloprotektif, termasuk perbaikan fungsi endotel, penurunan stres oksidatif, dan bahkan penurunan kekakuan arteri yang diukur dengan PWV. Efek positif dari pengobatan tersebut dapat memitigasi dampak negatif komplikasi, sehingga hubungan antara skor aDCSI dengan parameter vaskular menjadi sulit terlihat dalam desain cross-sectional seperti penelitian ini. Hal ini sekaligus menjelaskan mengapa pada analisis utama perbedaan baPWV antara pasien DMT2 dan kontrol tetap signifikan, sementara pada subanalisis internal berdasarkan aDCSI, gradien keparahan tidak muncul.
+
+Aspek lain yang juga penting adalah sifat aDCSI sebagai skor agregat. Skor ini menjumlahkan keparahan dari berbagai domain komplikasi, mulai dari retinopati, nefropati, neuropati, hingga komplikasi makrovaskular. Dampak fisiologis tiap jenis komplikasi terhadap kekakuan arteri bisa sangat berbeda; misalnya, nefropati diabetik kemungkinan berhubungan lebih erat dengan peningkatan baPWV dibandingkan retinopati. Dengan menggunakan skor total, nuansa ini hilang, sehingga sensitivitas untuk menangkap hubungan spesifik antara komplikasi tertentu dengan kesehatan vaskular menjadi berkurang.
+
+Dengan demikian, ketidak-signifikanan hubungan dalam subanalisis ini lebih merefleksikan keterbatasan data dan kompleksitas klinis daripada ketiadaan hubungan biologis yang sebenarnya. Kombinasi dari ukuran sampel kecil, rentang skor yang sempit, pengaruh terapi medikamentosa, serta sifat komposit dari skor aDCSI kemungkinan besar menjadi penyebab utama dari hasil ini. Oleh karena itu, temuan ini tidak meniadakan hipotesis, melainkan menekankan perlunya penelitian lanjutan dengan sampel yang lebih besar, stratifikasi komplikasi yang lebih detail, serta kontrol terhadap jenis dan durasi terapi, agar hubungan antara beban komplikasi diabetes dengan kesehatan vaskular dapat dievaluasi secara lebih akurat.
+
+Keterbatasan Penelitian
+Penting untuk mengakui beberapa keterbatasan dalam penelitian ini. Pertama, penggunaan desain cross-sectional hanya mampu menunjukkan adanya asosiasi pada satu waktu dan tidak dapat menyimpulkan hubungan sebab-akibat. Kedua, ukuran sampel yang relatif kecil (n=93) dapat memengaruhi kemampuan generalisasi hasil ini ke populasi yang lebih luas. Terakhir, meskipun model regresi telah mengontrol umur dan tekanan darah, masih ada variabel perancu lain seperti durasi diabetes, tingkat kontrol glikemik (HbA1c), dan jenis medikasi yang tidak dimasukkan dalam analisis, yang berpotensi memengaruhi hasil.
+
+Implikasi Klinis
+Meskipun memiliki keterbatasan, hasil penelitian ini memberikan implikasi klinis yang penting. Temuan ini mendukung penggunaan pengukuran baPWV sebagai alat skrining noninvasif yang praktis dan berharga dalam praktik klinis. Bapwv dapat berfungsi sebagai penanda subklinis untuk kerusakan vaskular awal pada pasien DMT2, sehingga memungkinkan identifikasi individu berisiko tinggi yang memerlukan manajemen kardiovaskular yang lebih agresif.
+
+
+Kesimpulan dan Saran
+
+
+Kesimpulan
+Berdasarkan hasil analisis data dan pembahasan yang telah diuraikan pada bab-bab sebelumnya, maka dapat ditarik dua kesimpulan utama yang menjawab rumusan masalah penelitian:
+Pasien Diabetes Melitus Tipe 2 (DMT2) memiliki nilai brachial-ankle pulse wave velocity (baPWV) yang secara signifikan lebih tinggi dibandingkan kelompok kontrol sehat. Model regresi multivariat final menunjukkan bahwa setelah mengontrol faktor perancu, status diabetes secara independen berhubungan dengan peningkatan baPWV sebesar 0,657 m/s (p=0,021) dibandingkan dengan kelompok kontrol sehat. Hal ini mengonfirmasi adanya peningkatan kekakuan arteri yang robust pada pasien DMT2.
+Tidak terdapat perbedaan yang bermakna secara statistik pada parameter komplians pembuluh darah, baik aorta (p = 0,274) maupun perifer (p = 0,410), antara kelompok DMT2 dan kelompok kontrol sehat setelah dilakukan penyesuaian terhadap faktor perancu. Hal ini menunjukkan bahwa variasi pada kedua parameter komplians tersebut lebih dipengaruhi oleh faktor hemodinamik, seperti denyut jantung dan tekanan darah, dibandingkan oleh status diabetes itu sendiri dalam model penelitian ini.
+Pada subanalisis intrakelompok pasien DMT2, tidak ditemukan hubungan yang signifikan secara statistik antara tingkat keparahan komplikasi (skor aDCSI) dengan ketiga parameter vaskular (baPWV, komplians aorta, dan komplians perifer). Hal ini menunjukkan bahwa dalam cakupan sampel penelitian ini, peningkatan skor aDCSI tidak terbukti menjadi prediktor independen terhadap perubahan kekakuan arteri maupun komplians vaskular.
+
+Saran
+Berdasarkan kesimpulan dan keterbatasan yang ada dalam penelitian ini, diajukan beberapa saran untuk praktik klinis dan pengembangan penelitian di masa depan:
+Saran untuk Praktik Klinis
+Mengingat temuan baPWV yang signifikan, pengukuran baPWV dapat dipertimbangkan sebagai alat skrining noninvasif yang praktis dan berguna untuk deteksi dini peningkatan kekakuan arteri pada pasien DMT2. Hal ini dapat membantu dalam stratifikasi risiko kardiovaskular dan menentukan intervensi yang lebih dini.
+Saran untuk Penelitian Lanjutan
+Disarankan untuk melakukan penelitian longitudinal yang mengikuti partisipan dari waktu ke waktu untuk mengonfirmasi hubungan sebab-akibat antara diabetes dan peningkatan kekakuan arteri, serta untuk melihat apakah baPWV dapat memprediksi kejadian kardiovaskular di masa depan.
+Penelitian selanjutnya sebaiknya menggunakan ukuran sampel yang lebih besar dan lebih beragam untuk meningkatkan kekuatan statistik dan kemampuan generalisasi hasil, terutama untuk variabel komplians.
+Untuk mendapatkan gambaran yang lebih akurat, penelitian di masa depan perlu mengumpulkan dan mengontrol data variabel perancu lain secara lebih detail, terutama durasi menderita diabetes, tingkat kontrol glikemik (HbA1c), dan jenis medikasi spesifik yang dikonsumsi pasien.
+Mengingat temuan komplians yang tidak signifikan, disarankan untuk melakukan penelitian lanjutan yang menggunakan metode pengukuran komplians yang berbeda (misalnya, berbasis ekokardiografi) untuk membandingkan hasilnya dan memahami apakah perbedaan metodologis memengaruhi temuan.
