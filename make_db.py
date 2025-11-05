@@ -1,14 +1,13 @@
 import time
 from langchain_community.document_loaders import TextLoader
 from langchain_huggingface import HuggingFaceEmbeddings
-# KITA KEMBALIKAN KE RECURSIVE, TAPI DENGAN SEPARATOR KHUSUS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 
 # --- Konfigurasi ---
 NAMA_FILE_TXT = "ta_teks_V1.1.txt" # Pastikan nama file ini sesuai
 NAMA_FOLDER_DB = "db_thesis"  #
-MODEL_EMBEDDING = "paraphrase-multilingual-MiniLM-L12-v2" #
+MODEL_EMBEDDING = "intfloat/multilingual-e5-base" #
 # --------------------
 
 def main():
@@ -20,12 +19,9 @@ def main():
     dokumen = loader.load()
     print(f"Total {len(dokumen)} dokumen berhasil dimuat.")
 
-    # 2. Split (Potong Teks) - INI BAGIAN YANG DIPERBARUI
+    # 2. Split (Potong Teks)
     print("[2/4] Memotong dokumen menjadi potongan-potongan (chunks)...")
     
-    # Daftar pemisah, dari prioritas tertinggi ke terendah
-    # Ini akan memotong di "---" dulu, baru memotong sisanya
-    # jika masih terlalu panjang (lebih dari 1000 karakter).
     my_separators = [
         "---",  # Pemisah logis utama kita
         "\n\n", # Baris kosong ganda (antar paragraf)
@@ -36,7 +32,7 @@ def main():
 
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000, #
-        chunk_overlap=200, # Kita kembalikan overlap agar konteks antar chunk terjaga
+        chunk_overlap=200,
         separators=my_separators # Menggunakan daftar prioritas kita
     )
     
