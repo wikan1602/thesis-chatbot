@@ -21,7 +21,7 @@ The bot is built on the text from the thesis: *"Asosiasi Diabetes Melitus Tipe 2
 * **LLM Orchestration:** LangChain
 * **LLM:** Groq (using `groq/compound`)
 * **Vector Database:** ChromaDB
-* **Embedding Model:** `sentence-transformers/all-MiniLM-L6-v2`
+* **Embedding Model:** `intfloat/multilingual-e5-base`
 * **Hosting:** Hugging Face Spaces (via Docker)
 
 ## How to Run Locally
