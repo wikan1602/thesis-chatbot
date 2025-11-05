@@ -54,7 +54,7 @@ The bot is built on the text from the thesis: *"Asosiasi Diabetes Melitus Tipe 2
         ```bash
         python make_db.py
         ```
-    This will create the local `db_ta/` folder required by `app.py`.
+    This will create the local `db_thesis/` folder required by `app.py`.
 
 5.  **Set up environment variables:**
     Create a file named `.env` and add your Groq API key:
